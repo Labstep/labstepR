@@ -22,7 +22,7 @@ user <- login('YOUR_USERNAME','YOUR_PASSWORD')
 experiment <- createExperiment(user,'My First Experiment','This is a description of my test experiment') 
 
 # Comment on an experiment
-comment <- addComment(user,experiment,'This is me commmenting on my test experiment')
+comment <- addComment(user,experiment,'This is me commenting on my test experiment')
 
 # Attach a file to an experiment
 
