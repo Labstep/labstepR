@@ -2,5 +2,11 @@
 
 export(addComment)
 export(attachFile)
+export(authenticate)
 export(createExperiment)
-export(login)
+export(createProject)
+export(createProtocol)
+export(createResource)
+export(getExperiments)
+export(getProtocols)
+export(getResources)

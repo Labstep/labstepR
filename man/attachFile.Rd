@@ -4,7 +4,7 @@
 \alias{attachFile}
 \title{Attaches a file to a thread on Labstep}
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` commande}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command}
 
 \item{object}{The labstep object you want to comment on. Can be `protocol`, `experiment` or `resource`}
 
@@ -13,13 +13,13 @@
 \item{caption}{A caption describing your file (optional)}
 }
 \value{
-Returns a `comment` object
+Returns a `comment` object with the file attached
 }
 \description{
 This function allows you to attach a file to different content types
 }
 \examples{
-user <- login("demo","demopassword")
+user <- authenticate("demo","demopassword")
 experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
 file <- attachFile(user,experiment,'An experiment testing the labstepR library')
 print(file)

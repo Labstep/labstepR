@@ -2,13 +2,13 @@
 #'
 #' This function allows you to comment on different content types 
 #' @name addComment
-#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` commande
+#' @param user A labstep user object. Must contain an `api_key` field. Returned from `authenticate` commande
 #' @param object The labstep object you want to comment on. Can be `protocol`, `experiment` or `resource`
 #' @param body The body of the comment in plain text.
 #' @return Returns a `comment` object 
 #' @export
 #' @examples
-#' user <- login("demo","demopassword")
+#' user <- authenticate("demo","demopassword")
 #' experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
 #' comment <- addComment(user,experiment,'An experiment testing the labstepR library')
 #' print(comment)

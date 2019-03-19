@@ -4,7 +4,7 @@
 \alias{addComment}
 \title{Adds a comment to a thread on Labstep}
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` commande}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `authenticate` commande}
 
 \item{object}{The labstep object you want to comment on. Can be `protocol`, `experiment` or `resource`}
 
@@ -17,7 +17,7 @@ Returns a `comment` object
 This function allows you to comment on different content types
 }
 \examples{
-user <- login("demo","demopassword")
+user <- authenticate("demo","demopassword")
 experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
 comment <- addComment(user,experiment,'An experiment testing the labstepR library')
 print(comment)

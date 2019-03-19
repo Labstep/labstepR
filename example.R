@@ -1,6 +1,6 @@
 ## Example Script
 
-user <- login('test@labstep.com','testpass')
+user <- authenticate('test@labstep.com','testpass')
 print(user)
 experiment <- createExperiment(user,'R Package Test','R package description')
 print(experiment)
