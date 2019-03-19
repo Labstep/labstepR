@@ -1,4 +1,4 @@
-
+## Example Script
 
 user <- login('test@labstep.com','testpass')
 print(user)

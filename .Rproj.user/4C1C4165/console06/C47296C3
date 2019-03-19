@@ -1,18 +1,0 @@
-]0;~/Code/labstepR[?1034hJamess-MacBook-Pro-2:labstepR barneywalker$ [KJamess-MacBook-Pro-2:labstepR barneywalker$ git remote dd [K[K[Kadd origin https://github.com/Labst ep/labstepR.git
-fatal: not a git repository (or any of the parent directories): .git
-]0;~/Code/labstepRJamess-MacBook-Pro-2:labstepR barneywalker$ git init
-Initialized empty Git repository in /Users/barneywalker/Code/labstepR/.git/
-]0;~/Code/labstepRJamess-MacBook-Pro-2:labstepR barneywalker$ git initremote add origin https://github.com/Labsteep/labstepR.git
-]0;~/Code/labstepRJamess-MacBook-Pro-2:labstepR barneywalker$ git push -u origin master
-error: src refspec master does not match any.
-[31merror: failed to push some refs to 'https://github.com/Labstep/labstepR.git'
-[m]0;~/Code/labstepRJamess-MacBook-Pro-2:labstepR barneywalker$ git push -u origin master[K[K[K[K[K[K[K[K[K[K[K[K[K[K
-fatal: The current branch master has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin master
-
-]0;~/Code/labstepRJamess-MacBook-Pro-2:labstepR barneywalker$     git push --set-upstream origin master
-error: src refspec master does not match any.
-[31merror: failed to push some refs to 'https://github.com/Labstep/labstepR.git'
-[m]0;~/Code/labstepRJamess-MacBook-Pro-2:labstepR barneywalker$ git push -u[C origin masterremote add origin https://github.com/Labsteep/labstepR.git
