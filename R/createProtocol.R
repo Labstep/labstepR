@@ -14,10 +14,10 @@
 
 library(httr)
 
-createExperiment <- function(user,name,description){
+createProtocol <- function(user,name){
 
-  req <- POST('https://api.labstep.com/api/generic/experiment-workflow',
-              body=list(name=name,description=description),
+  req <- POST('https://api.labstep.com/api/generic/protocol',
+              body=list(name=name),
               add_headers(apikey=user$api_key),
               encode='json')
 
