@@ -5,6 +5,8 @@
 \title{Get Protocols}
 \arguments{
 \item{user}{A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command}
+
+\item{count}{Number of results to return. Defaults to 100.}
 }
 \value{
 Returns a list of `protocol` objects

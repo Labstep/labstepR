@@ -3,6 +3,7 @@
 #' This function allows you to search your Protocol library on Labstep.
 #' @name getProtocols
 #' @param user A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command
+#' @param count Number of results to return. Defaults to 100.
 #' @return Returns a list of `protocol` objects
 #' @export
 #' @examples
@@ -13,15 +14,35 @@
 
 library(httr)
 
-getProtocols <- function(user){
+getProtocols <- function(user,count=100){
 
   url = paste('https://api.labstep.com/api/generic/protocol-collection?search=1&protocol_collection_playlist_id=',
               user$protocol_collection_playlists[[1]]$id,
-              '&cursor=-1','&count=1000',
+              '&cursor=-1','&count=',min(count,1000),
               sep='')
   req <- GET(url,
               add_headers(apikey=user$api_key),
               encode='json')
 
-  return(content(req)$items)
+  resp = content(req)
+  items = resp$items
+
+  expected_results = min(resp$total,count)
+
+  while(length(items)<expected_results){
+
+    url = paste('https://api.labstep.com/api/generic/protocol-collection?search=1&protocol_collection_playlist_id=',
+                user$protocol_collection_playlists[[1]]$id,
+                '&cursor=',resp$next_cursor,'&count=',min(expected_results-length(items),1000),
+                sep='')
+    req <- GET(url,
+               add_headers(apikey=user$api_key),
+               encode='json')
+
+    resp = content(req)
+    items = c(items,resp$items)
+  }
+
+
+  return(items)
 }
