@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1552907154148.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "359319282",
+    "id" : "887D2CE9",
+    "lastKnownWriteTime" : 1553003183,
+    "last_content_update" : 1553003183639,
+    "path" : "~/Code/labstepR/labstepR/R/createExperiment.R",
+    "project_path" : "labstepR/R/createExperiment.R",
+    "properties" : {
+        "cursorPosition" : "3,25",
+        "scrollLine" : "2"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

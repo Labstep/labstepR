@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553003210644.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3823849190",
+    "id" : "206A7FBC",
+    "lastKnownWriteTime" : 1553003599,
+    "last_content_update" : 1553003599315,
+    "path" : "~/Code/labstepR/labstepR/R/attachFile.R",
+    "project_path" : "labstepR/R/attachFile.R",
+    "properties" : {
+        "cursorPosition" : "8,60",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
