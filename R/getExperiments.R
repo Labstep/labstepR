@@ -1,6 +1,6 @@
 #' Get Experiments
 #'
-#' This function allows you to search your Protocol library on Labstep.
+#' This function allows you to search your Experiments on Labstep.
 #' @name getExperiments
 #' @param user A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command
 #' @param count Number of results to return. Defaults to 100.
