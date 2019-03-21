@@ -15,6 +15,8 @@ install_github("Labstep/labstepR")
 ## Usage
 
 ```
+library(labstepR)
+
 # Login to your Labstep account
 user <- login('YOUR_USERNAME','YOUR_PASSWORD') 
 
