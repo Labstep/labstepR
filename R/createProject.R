@@ -2,12 +2,12 @@
 #'
 #' This function allows you to create a Labstep Project.
 #' @name createProject
-#' @param user A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command
+#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
 #' @param name The name you want to give your Project.
 #' @return Returns an `project` object
 #' @export
 #' @examples
-#' user <- authenticate("demo@labstep.com","demopassword")
+#' user <- login("demo@labstep.com","demopassword")
 #' project <- createProject(user,'My First Project')
 #' print(project)
 

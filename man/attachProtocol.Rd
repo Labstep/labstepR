@@ -4,7 +4,7 @@
 \alias{attachProtocol}
 \title{Attach a Protocol to an Experiment on Labstep}
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 
 \item{experiment}{The experiment you want to attach the protocol to. Must have at least an `id` field.}
 
@@ -17,7 +17,7 @@ Returns an `experiment` object
 This function allows you to attach a Protocol to an existing Experiment.
 }
 \examples{
-user <- authenticate("demo@labstep.com","demopassword")
+user <- login("demo@labstep.com","demopassword")
 experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
 protocol <- createProtocol(user,'My First Protocol')
 experiment <- attachProtocol(user,experiment,protocol)

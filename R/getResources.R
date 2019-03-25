@@ -2,12 +2,12 @@
 #'
 #' This function allows you to search your Resource library on Labstep.
 #' @name getResources
-#' @param user A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command
+#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
 #' @param count Number of results to return. Defaults to 100.
 #' @return Returns a list of `resource` objects
 #' @export
 #' @examples
-#' user <- authenticate("demo@labstep.com","demopassword")
+#' user <- login("demo@labstep.com","demopassword")
 #' resources <- getResources(user)
 #' print(resources)
 

@@ -4,7 +4,7 @@
 \alias{getProtocol}
 \title{Get Protocol}
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 
 \item{id}{ID of the protocol to retrieve}
 }
@@ -15,7 +15,7 @@ Returns a `protocol` object
 This function allows you to retrieve metadata for a single protocol
 }
 \examples{
-user <- authenticate("demo@labstep.com","demopassword")
+user <- login("demo@labstep.com","demopassword")
 protocol <- getProtocol(user,123)
 print(protocol)
 }

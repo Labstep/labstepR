@@ -4,7 +4,7 @@
 \alias{createProtocol}
 \title{Create a Protocol on Labstep}
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 
 \item{name}{The name you want to give your protocol.}
 }
@@ -15,7 +15,7 @@ Returns an `protocol` object
 This function allows you to create a protocol.
 }
 \examples{
-user <- authenticate("demo@labstep.com","demopassword")
+user <- login("demo@labstep.com","demopassword")
 protocol <- createProtocol(user,'My First Protocol')
 print(protocol)
 }

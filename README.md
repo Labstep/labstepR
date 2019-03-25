@@ -18,7 +18,7 @@ install_github("Labstep/labstepR")
 library(labstepR)
 
 # Login to your Labstep account
-user <- authenticate('YOUR_USERNAME','YOUR_PASSWORD') 
+user <- login('YOUR_USERNAME','YOUR_PASSWORD') 
 
 # Create an experiment
 experiment <- createExperiment(user,'My First Experiment','This is a description of my test experiment') 

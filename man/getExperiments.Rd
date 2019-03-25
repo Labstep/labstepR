@@ -4,7 +4,7 @@
 \alias{getExperiments}
 \title{Get Experiments}
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 
 \item{count}{Number of results to return. Defaults to 100.}
 }
@@ -15,7 +15,7 @@ Returns a list of `experiment` objects
 This function allows you to search your Experiments on Labstep.
 }
 \examples{
-user <- authenticate("demo@labstep.com","demopassword")
+user <- login("demo@labstep.com","demopassword")
 experiments <- getExperiments(user)
 print(experiments)
 }

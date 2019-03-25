@@ -2,12 +2,12 @@
 #'
 #' This function allows you to retrieve metadata for a single project
 #' @name getProject
-#' @param user A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command
+#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
 #' @param id ID of the project to retrieve
 #' @return Returns a `project` object
 #' @export
 #' @examples
-#' user <- authenticate("demo@labstep.com","demopassword")
+#' user <- login("demo@labstep.com","demopassword")
 #' project <- getProject(user,123)
 #' print(project)
 

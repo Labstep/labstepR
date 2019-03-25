@@ -2,14 +2,14 @@
 #'
 #' This function allows you to attach a file to different content types 
 #' @name attachFile
-#' @param user A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command
+#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
 #' @param object The labstep object you want to comment on. Can be `protocol`, `experiment` or `resource`
 #' @param filepath The path to ther file to attach.
 #' @param caption A caption describing your file (optional)
 #' @return Returns a `comment` object with the file attached
 #' @export
 #' @examples
-#' user <- authenticate("demo","demopassword")
+#' user <- login("demo","demopassword")
 #' experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
 #' file <- attachFile(user,experiment,'An experiment testing the labstepR library')
 #' print(file)

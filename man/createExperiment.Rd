@@ -4,7 +4,7 @@
 \alias{createExperiment}
 \title{Create an Experiment on Labstep}
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 
 \item{name}{The name you want to give your experiment.}
 
@@ -19,7 +19,7 @@ Returns an `experiment` object
 This function allows you to create an experiment card.
 }
 \examples{
-user <- authenticate("demo@labstep.com","demopassword")
+user <- login("demo@labstep.com","demopassword")
 experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
 print(experiment)
 }

@@ -4,7 +4,7 @@
 \alias{createResource}
 \title{Create a Resource on Labstep}
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command.}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command.}
 
 \item{name}{The name you want to give your resource}
 }
@@ -15,7 +15,7 @@ Returns a `resource` object
 This function allows you to create a resource on Labstep.
 }
 \examples{
-user <- authenticate("demo@labstep.com","demopassword")
+user <- login("demo@labstep.com","demopassword")
 resource <- createResource(user,'My First Resource')
 print(resource)
 }

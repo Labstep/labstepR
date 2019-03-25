@@ -4,7 +4,7 @@
 \alias{getResource}
 \title{Get Resource}
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `authenticate` command}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 
 \item{id}{ID of the resource to retrieve}
 }
@@ -15,7 +15,7 @@ Returns a `resource` object
 This function allows you to retrieve metadata for a single resource
 }
 \examples{
-user <- authenticate("demo@labstep.com","demopassword")
+user <- login("demo@labstep.com","demopassword")
 resource <- getResource(user,123)
 print(resource)
 }
