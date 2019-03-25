@@ -6,6 +6,7 @@
 #' @param password Your Labstep password
 #' @keywords authenticate login apikey
 #' @return Returns a 'user' object.
+#' @import httr
 #' @export
 #' @examples
 #' user <- authenticate("demo@labstep.com","demopassword")
@@ -15,6 +16,6 @@ library(httr)
 
 authenticate <- function(username,password){
 
-  req <- httr::POST('https://api.labstep.com/public-api/user/login',body = list(username=username,password=password))
+  req <- POST('https://api.labstep.com/public-api/user/login',body = list(username=username,password=password))
   return(content(req))
 }

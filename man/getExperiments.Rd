@@ -12,7 +12,7 @@
 Returns a list of `experiment` objects
 }
 \description{
-This function allows you to search your Protocol library on Labstep.
+This function allows you to search your Experiments on Labstep.
 }
 \examples{
 user <- authenticate("demo@labstep.com","demopassword")

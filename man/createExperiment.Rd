@@ -8,6 +8,8 @@
 
 \item{name}{The name you want to give your experiment.}
 
+\item{protocolIds}{List of ids for protocols to attach to the experiment.}
+
 \item{description}{Give your experiment a description to help you remember what it was about.}
 }
 \value{
