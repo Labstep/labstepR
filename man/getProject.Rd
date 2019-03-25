@@ -3,6 +3,9 @@
 \name{getProject}
 \alias{getProject}
 \title{Get Project}
+\usage{
+getProject(user, id)
+}
 \arguments{
 \item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 

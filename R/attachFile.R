@@ -7,6 +7,7 @@
 #' @param filepath The path to ther file to attach.
 #' @param caption A caption describing your file (optional)
 #' @return Returns a `comment` object with the file attached
+#' @import httr
 #' @export
 #' @examples
 #' user <- login("demo","demopassword")
@@ -15,18 +16,16 @@
 #' print(file)
 
 
-library(httr)
-
 attachFile <- function(user,object,filepath,caption){
   
-  req1 <- POST('https://api.labstep.com/api/generic/file/upload',
+  req1 <- httr::POST('https://api.labstep.com/api/generic/file/upload',
               body=list(file=upload_file(filepath)),
               add_headers(apikey=user$api_key),
               encode='multipart')
   
   file = content(req1) 
   
-  req <- POST('https://api.labstep.com/api/generic/comment',
+  req <- httr::POST('https://api.labstep.com/api/generic/comment',
               body=list(body=caption,file_id=list(names(file)[1]),thread_id=object$thread$id),
               add_headers(apikey=user$api_key),
               encode='json')

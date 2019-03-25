@@ -3,14 +3,17 @@
 \name{createExperiment}
 \alias{createExperiment}
 \title{Create an Experiment on Labstep}
+\usage{
+createExperiment(user, name, description = NULL, protocolIds = NULL)
+}
 \arguments{
 \item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 
 \item{name}{The name you want to give your experiment.}
 
-\item{protocolIds}{List of ids for protocols to attach to the experiment.}
-
 \item{description}{Give your experiment a description to help you remember what it was about.}
+
+\item{protocolIds}{List of ids for protocols to attach to the experiment.}
 }
 \value{
 Returns an `experiment` object

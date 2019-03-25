@@ -3,6 +3,9 @@
 \name{attachProtocol}
 \alias{attachProtocol}
 \title{Attach a Protocol to an Experiment on Labstep}
+\usage{
+attachProtocol(user, experiment, protocol)
+}
 \arguments{
 \item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 

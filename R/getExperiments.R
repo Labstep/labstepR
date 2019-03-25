@@ -5,21 +5,19 @@
 #' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
 #' @param count Number of results to return. Defaults to 100.
 #' @return Returns a list of `experiment` objects
+#' @import httr
 #' @export
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
 #' experiments <- getExperiments(user)
 #' print(experiments)
 
-
-library(httr)
-
 getExperiments <- function(user,count=100){
 
   url = paste('https://api.labstep.com/api/generic/experiment-workflow?search=1',
               '&cursor=-1','&count=',min(count,1000),
               sep='')
-  req <- GET(url,
+  req <- httr::GET(url,
              add_headers(apikey=user$api_key),
              encode='json')
 
@@ -33,7 +31,7 @@ getExperiments <- function(user,count=100){
     url = paste('https://api.labstep.com/api/generic/experiment-workflow?search=1',
                 '&cursor=',resp$next_cursor,'&count=',min(expected_results-length(items),1000),
                 sep='')
-    req <- GET(url,
+    req <- httr::GET(url,
                add_headers(apikey=user$api_key),
                encode='json')
 

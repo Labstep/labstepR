@@ -12,10 +12,8 @@
 #' user <- login("demo@labstep.com","demopassword")
 #' print(user)
 
-library(httr)
-
 login <- function(username,password){
 
-  req <- POST('https://api.labstep.com/public-api/user/login',body = list(username=username,password=password))
+  req <- httr::POST('https://api.labstep.com/public-api/user/login',body = list(username=username,password=password))
   return(content(req))
 }

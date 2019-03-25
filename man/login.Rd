@@ -3,6 +3,9 @@
 \name{login}
 \alias{login}
 \title{Authenticate a Labstep user}
+\usage{
+login(username, password)
+}
 \arguments{
 \item{username}{Your Labstep username (usually the email address you signed up with)}
 
@@ -19,5 +22,4 @@ user <- login("demo@labstep.com","demopassword")
 print(user)
 }
 \keyword{apikey}
-\keyword{login}
 \keyword{login}

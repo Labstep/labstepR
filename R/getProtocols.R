@@ -5,14 +5,12 @@
 #' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
 #' @param count Number of results to return. Defaults to 100.
 #' @return Returns a list of `protocol` objects
+#' @import httr
 #' @export
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
 #' protocols <- getProtocols(user)
 #' print(protocols)
-
-
-library(httr)
 
 getProtocols <- function(user,count=100){
 
@@ -20,7 +18,7 @@ getProtocols <- function(user,count=100){
               user$protocol_collection_playlists[[1]]$id,
               '&cursor=-1','&count=',min(count,1000),
               sep='')
-  req <- GET(url,
+  req <- httr::GET(url,
               add_headers(apikey=user$api_key),
               encode='json')
 
@@ -35,7 +33,7 @@ getProtocols <- function(user,count=100){
                 user$protocol_collection_playlists[[1]]$id,
                 '&cursor=',resp$next_cursor,'&count=',min(expected_results-length(items),1000),
                 sep='')
-    req <- GET(url,
+    req <- httr::GET(url,
                add_headers(apikey=user$api_key),
                encode='json')
 

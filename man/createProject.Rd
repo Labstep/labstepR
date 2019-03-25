@@ -3,6 +3,9 @@
 \name{createProject}
 \alias{createProject}
 \title{Create a Project on Labstep}
+\usage{
+createProject(user, name)
+}
 \arguments{
 \item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 

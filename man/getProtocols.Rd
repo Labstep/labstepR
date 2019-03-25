@@ -3,6 +3,9 @@
 \name{getProtocols}
 \alias{getProtocols}
 \title{Get Protocols}
+\usage{
+getProtocols(user, count = 100)
+}
 \arguments{
 \item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 

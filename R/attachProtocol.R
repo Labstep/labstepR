@@ -6,6 +6,7 @@
 #' @param experiment The experiment you want to attach the protocol to. Must have at least an `id` field.
 #' @param protocol The protocol you want to attach. Must have at least an `id` field
 #' @return Returns an `experiment` object
+#' @import httr
 #' @export
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
@@ -14,18 +15,15 @@
 #' experiment <- attachProtocol(user,experiment,protocol)
 #' print(experiment)
 
-
-library(httr)
-
 attachProtocol <- function(user,experiment,protocol){
 
-  req <- POST('https://api.labstep.com/api/generic/experiment',
+  req <- httr::POST('https://api.labstep.com/api/generic/experiment',
               body=list(experiment_workflow_id=experiment$id,protocol_id=protocol$id),
               add_headers(apikey=user$api_key),
               encode='json')
 
   url = paste('https://api.labstep.com/api/generic/experiment-workflow/',experiment$id,sep='')
-  req <- GET(url,
+  req <- httr::GET(url,
              add_headers(apikey=user$api_key),
              encode='json')
   experiment = content(req)

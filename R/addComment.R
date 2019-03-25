@@ -6,6 +6,7 @@
 #' @param object The labstep object you want to comment on. Can be `protocol`, `experiment` or `resource`
 #' @param body The body of the comment in plain text.
 #' @return Returns a `comment` object 
+#' @import httr
 #' @export
 #' @examples
 #' user <- login("demo","demopassword")
@@ -17,7 +18,7 @@ library(httr)
 
 addComment <- function(user,object,comment){
   
-  req <- POST('https://api.labstep.com/api/generic/comment',
+  req <- httr::POST('https://api.labstep.com/api/generic/comment',
               body=list(body=comment,thread_id=object$thread$id),
               add_headers(apikey=user$api_key),
               encode='json')
