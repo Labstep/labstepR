@@ -15,6 +15,6 @@ library(httr)
 
 authenticate <- function(username,password){
 
-  req <- POST('https://api.labstep.com/public-api/user/login',body = list(username=username,password=password))
+  req <- httr::POST('https://api.labstep.com/public-api/user/login',body = list(username=username,password=password))
   return(content(req))
 }
