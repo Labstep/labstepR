@@ -2,7 +2,7 @@
 #'
 #' This function allows you to search your Experiments on Labstep.
 #' @name getExperiments
-#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
+#' @param user A labstep user object. Must contain an `api\_key` field. Returned from `login` command
 #' @param count Number of results to return. Defaults to 100.
 #' @return Returns a list of `experiment` objects
 #' @import httr

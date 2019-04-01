@@ -7,7 +7,7 @@
 attachFile(user, object, filepath, caption)
 }
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
+\item{user}{A labstep user object. Must contain an `api\_key` field. Returned from `login` command}
 
 \item{object}{The labstep object you want to comment on. Can be `protocol`, `experiment` or `resource`}
 
@@ -22,8 +22,13 @@ Returns a `comment` object with the file attached
 This function allows you to attach a file to different content types
 }
 \examples{
-user <- login("demo","demopassword")
-experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
-file <- attachFile(user,experiment,'An experiment testing the labstepR library')
+user <- login("demo@labstep.com","demopassword")
+expName = 'My First Experiment'
+expDesc = 'An experiment testing the labstepR library'
+experiment <- createExperiment(user,expName,expDesc)
+filepath = 'mydata.RData'
+save.image(filepath)
+caption = 'The R workspace after running this script'
+file <- attachFile(user,experiment,filepath,caption)
 print(file)
 }

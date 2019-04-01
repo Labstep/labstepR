@@ -2,7 +2,7 @@
 #'
 #' This function allows you to retrieve metadata for a single experiment
 #' @name getExperiment
-#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
+#' @param user A labstep user object. Must contain an `api\_key` field. Returned from `login` command
 #' @param id ID of the experiment to retrieve
 #' @return Returns an `experiment` object
 #' @import httr
@@ -10,7 +10,7 @@
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
 #' experiment <- getExperiment(user,123)
-#' print(experiments)
+#' print(experiment)
 
 getExperiment <- function(user,id){
 

@@ -2,7 +2,7 @@
 #'
 #' This function allows you to attach a Protocol to an existing Experiment.
 #' @name attachProtocol
-#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
+#' @param user A labstep user object. Must contain an `api\_key` field. Returned from `login` command
 #' @param experiment The experiment you want to attach the protocol to. Must have at least an `id` field.
 #' @param protocol The protocol you want to attach. Must have at least an `id` field
 #' @return Returns an `experiment` object
@@ -10,7 +10,9 @@
 #' @export
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
-#' experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
+#' expName = 'My First Experiment'
+#' expDesc = 'An experiment testing the labstepR library'
+#' experiment <- createExperiment(user,expName,expDesc)
 #' protocol <- createProtocol(user,'My First Protocol')
 #' experiment <- attachProtocol(user,experiment,protocol)
 #' print(experiment)

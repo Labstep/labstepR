@@ -2,7 +2,7 @@
 #'
 #' This function allows you to retrieve metadata for a single resource
 #' @name getResource
-#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
+#' @param user A labstep user object. Must contain an `api\_key` field. Returned from `login` command
 #' @param id ID of the resource to retrieve
 #' @return Returns a `resource` object
 #' @import httr

@@ -7,7 +7,7 @@
 getExperiment(user, id)
 }
 \arguments{
-\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
+\item{user}{A labstep user object. Must contain an `api\_key` field. Returned from `login` command}
 
 \item{id}{ID of the experiment to retrieve}
 }
@@ -20,5 +20,5 @@ This function allows you to retrieve metadata for a single experiment
 \examples{
 user <- login("demo@labstep.com","demopassword")
 experiment <- getExperiment(user,123)
-print(experiments)
+print(experiment)
 }

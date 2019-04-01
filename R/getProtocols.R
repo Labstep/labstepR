@@ -2,7 +2,7 @@
 #'
 #' This function allows you to search your Protocol library on Labstep.
 #' @name getProtocols
-#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
+#' @param user A labstep user object. Must contain an `api\_key` field. Returned from `login` command
 #' @param count Number of results to return. Defaults to 100.
 #' @return Returns a list of `protocol` objects
 #' @import httr
