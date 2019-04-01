@@ -33,3 +33,7 @@ filepath = 'test_file.txt'
 file <- attachFile(user,experiment,filepath,'does this caption work?')
 
 ```
+
+## API Reference
+
+For a full list of available methods see https://labstep.github.io/labstepR/reference/index.html
