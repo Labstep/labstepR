@@ -2,7 +2,7 @@
 #'
 #' This function allows you to create an experiment card.
 #' @name createExperiment
-#' @param user A labstep user object. Must contain an `api\_key` field. Returned from `login` command
+#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
 #' @param name The name you want to give your experiment.
 #' @param protocolIds List of ids for protocols to attach to the experiment.
 #' @param description Give your experiment a description to help you remember what it was about.

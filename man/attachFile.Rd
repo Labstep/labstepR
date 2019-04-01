@@ -7,7 +7,7 @@
 attachFile(user, object, filepath, caption)
 }
 \arguments{
-\item{user}{A labstep user object. Must contain an `api\_key` field. Returned from `login` command}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 
 \item{object}{The labstep object you want to comment on. Can be `protocol`, `experiment` or `resource`}
 

@@ -2,7 +2,7 @@
 #'
 #' This function allows you to attach a Protocol to an existing Experiment.
 #' @name attachProtocol
-#' @param user A labstep user object. Must contain an `api\_key` field. Returned from `login` command
+#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
 #' @param experiment The experiment you want to attach the protocol to. Must have at least an `id` field.
 #' @param protocol The protocol you want to attach. Must have at least an `id` field
 #' @return Returns an `experiment` object

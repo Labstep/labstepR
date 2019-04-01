@@ -7,7 +7,7 @@
 getExperiments(user, count = 100)
 }
 \arguments{
-\item{user}{A labstep user object. Must contain an `api\_key` field. Returned from `login` command}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 
 \item{count}{Number of results to return. Defaults to 100.}
 }

@@ -2,7 +2,7 @@
 #'
 #' This function allows you to create a Labstep Project.
 #' @name createProject
-#' @param user A labstep user object. Must contain an `api\_key` field. Returned from `login` command
+#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
 #' @param name The name you want to give your Project.
 #' @return Returns an `project` object
 #' @import httr

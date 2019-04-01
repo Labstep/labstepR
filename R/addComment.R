@@ -2,7 +2,7 @@
 #'
 #' This function allows you to comment on different content types
 #' @name addComment
-#' @param user A labstep user object. Must contain an `api\_key` field. Returned from `login` commande
+#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` commande
 #' @param object The labstep object you want to comment on. Can be `protocol`, `experiment` or `resource`
 #' @param body The body of the comment in plain text.
 #' @return Returns a `comment` object

@@ -2,7 +2,7 @@
 #'
 #' This function allows you to attach a file to different content types
 #' @name attachFile
-#' @param user A labstep user object. Must contain an `api\_key` field. Returned from `login` command
+#' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
 #' @param object The labstep object you want to comment on. Can be `protocol`, `experiment` or `resource`
 #' @param filepath The path to ther file to attach.
 #' @param caption A caption describing your file (optional)

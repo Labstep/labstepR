@@ -7,7 +7,7 @@
 attachProtocol(user, experiment, protocol)
 }
 \arguments{
-\item{user}{A labstep user object. Must contain an `api\_key` field. Returned from `login` command}
+\item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command}
 
 \item{experiment}{The experiment you want to attach the protocol to. Must have at least an `id` field.}
 
