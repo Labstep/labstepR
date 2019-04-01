@@ -9,7 +9,7 @@
 #' @export
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
-#' project <- getProject(user,123)
+#' project <- getProject(user,1186)
 #' print(project)
 
 getProject <- function(user,id){

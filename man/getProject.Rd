@@ -19,6 +19,6 @@ This function allows you to retrieve metadata for a single project
 }
 \examples{
 user <- login("demo@labstep.com","demopassword")
-project <- getProject(user,123)
+project <- getProject(user,1186)
 print(project)
 }

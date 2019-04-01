@@ -19,6 +19,6 @@ This function allows you to retrieve metadata for a single experiment
 }
 \examples{
 user <- login("demo@labstep.com","demopassword")
-experiment <- getExperiment(user,123)
+experiment <- getExperiment(user,14671)
 print(experiment)
 }

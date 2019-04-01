@@ -9,7 +9,7 @@
 #' @export
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
-#' protocol <- getProtocol(user,123)
+#' protocol <- getProtocol(user,6140)
 #' print(protocol)
 
 

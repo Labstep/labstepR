@@ -9,7 +9,7 @@
 #' @export
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
-#' resource <- getResource(user,123)
+#' resource <- getResource(user,391521)
 #' print(resource)
 
 getResource <- function(user,id){

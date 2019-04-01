@@ -19,6 +19,6 @@ This function allows you to retrieve metadata for a single resource
 }
 \examples{
 user <- login("demo@labstep.com","demopassword")
-resource <- getResource(user,123)
+resource <- getResource(user,391521)
 print(resource)
 }
