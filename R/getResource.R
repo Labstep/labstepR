@@ -1,4 +1,4 @@
-#' Get Resource
+#' Retrieve metadata for a particular Labstep Resource
 #'
 #' This function allows you to retrieve metadata for a single resource
 #' @name getResource

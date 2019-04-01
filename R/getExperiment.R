@@ -1,4 +1,4 @@
-#' Get Experiment
+#' Retrieve metadata for a particular Labstep Experiment
 #'
 #' This function allows you to retrieve metadata for a single experiment
 #' @name getExperiment

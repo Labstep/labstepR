@@ -1,4 +1,4 @@
-#' Get Project
+#' Retrieve metadata for a particular Labstep Project
 #'
 #' This function allows you to retrieve metadata for a single project
 #' @name getProject

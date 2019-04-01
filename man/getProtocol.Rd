@@ -2,7 +2,7 @@
 % Please edit documentation in R/getProtocol.R
 \name{getProtocol}
 \alias{getProtocol}
-\title{Get Protocol}
+\title{Retrieve metadata for a particular Labstep Protocol}
 \usage{
 getProtocol(user, id)
 }

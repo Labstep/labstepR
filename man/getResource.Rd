@@ -2,7 +2,7 @@
 % Please edit documentation in R/getResource.R
 \name{getResource}
 \alias{getResource}
-\title{Get Resource}
+\title{Retrieve metadata for a particular Labstep Resource}
 \usage{
 getResource(user, id)
 }

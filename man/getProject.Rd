@@ -2,7 +2,7 @@
 % Please edit documentation in R/getProject.R
 \name{getProject}
 \alias{getProject}
-\title{Get Project}
+\title{Retrieve metadata for a particular Labstep Project}
 \usage{
 getProject(user, id)
 }

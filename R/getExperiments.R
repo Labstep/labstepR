@@ -1,4 +1,4 @@
-#' Get Experiments
+#' Get List of Labstep Experiments
 #'
 #' This function allows you to search your Experiments on Labstep.
 #' @name getExperiments

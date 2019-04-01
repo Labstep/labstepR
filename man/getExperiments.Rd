@@ -2,7 +2,7 @@
 % Please edit documentation in R/getExperiments.R
 \name{getExperiments}
 \alias{getExperiments}
-\title{Get Experiments}
+\title{Get List of Labstep Experiments}
 \usage{
 getExperiments(user, count = 100)
 }

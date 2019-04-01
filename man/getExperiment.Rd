@@ -2,7 +2,7 @@
 % Please edit documentation in R/getExperiment.R
 \name{getExperiment}
 \alias{getExperiment}
-\title{Get Experiment}
+\title{Retrieve metadata for a particular Labstep Experiment}
 \usage{
 getExperiment(user, id)
 }

@@ -1,4 +1,4 @@
-#' Get Protocols
+#' Get List of Labstep Protocols
 #'
 #' This function allows you to search your Protocol library on Labstep.
 #' @name getProtocols

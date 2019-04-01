@@ -2,7 +2,7 @@
 % Please edit documentation in R/getResources.R
 \name{getResources}
 \alias{getResources}
-\title{Get Resources}
+\title{Get List of Labstep Resources}
 \usage{
 getResources(user, count = 100)
 }

@@ -1,4 +1,4 @@
-#' Get Protocol
+#' Retrieve metadata for a particular Labstep Protocol
 #'
 #' This function allows you to retrieve metadata for a single protocol
 #' @name getProtocol

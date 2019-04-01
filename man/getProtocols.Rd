@@ -2,7 +2,7 @@
 % Please edit documentation in R/getProtocols.R
 \name{getProtocols}
 \alias{getProtocols}
-\title{Get Protocols}
+\title{Get List of Labstep Protocols}
 \usage{
 getProtocols(user, count = 100)
 }

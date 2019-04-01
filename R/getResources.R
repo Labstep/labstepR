@@ -1,4 +1,4 @@
-#' Get Resources
+#' Get List of Labstep Resources
 #'
 #' This function allows you to search your Resource library on Labstep.
 #' @name getResources
