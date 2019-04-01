@@ -4,7 +4,7 @@
 \alias{createResource}
 \title{Create a Resource on Labstep}
 \usage{
-createResource(user, name, metadata)
+createResource(user, name)
 }
 \arguments{
 \item{user}{A labstep user object. Must contain an `api_key` field. Returned from `login` command.}

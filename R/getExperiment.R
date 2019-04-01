@@ -10,7 +10,7 @@
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
 #' experiment <- getExperiment(user,123)
-#' print(experiments)
+#' print(experiment)
 
 getExperiment <- function(user,id){
 

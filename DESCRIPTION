@@ -5,7 +5,7 @@ Authors@R: person("Barney", "Walker", email = "barney@labstep.com", role = c("au
 Description: Convenient wrapper functions around the Labstep API. Document your experiments, attach files, comments and more.
 Depends: R (>= 3.1.0)
 Imports: httr
-License: What license is it under?
+License: MIT
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1.9000

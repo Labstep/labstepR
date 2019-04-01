@@ -17,8 +17,11 @@ Returns a `comment` object
 This function allows you to comment on different content types
 }
 \examples{
-user <- login("demo","demopassword")
-experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
-comment <- addComment(user,experiment,'An experiment testing the labstepR library')
+user <- login("demo@labstep.com","demopassword")
+expName = 'My First Experiment'
+expDesc = 'An experiment testing the labstepR library'
+experiment <- createExperiment(user,expName,expDesc)
+commentBody = 'An experiment testing the labstepR library'
+comment <- addComment(user,experiment,commentBody)
 print(comment)
 }

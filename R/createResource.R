@@ -12,7 +12,7 @@
 #' resource <- createResource(user,'My First Resource')
 #' print(resource)
 
-createResource <- function(user,name,metadata){
+createResource <- function(user,name){
 
   req <- httr::POST('https://api.labstep.com/api/generic/resource',
               body=list(name=name),

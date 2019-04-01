@@ -11,7 +11,9 @@
 #' @export
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
-#' experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
+#' expName = 'My First Experiment'
+#' expDesc = 'An experiment testing the labstepR library'
+#' experiment <- createExperiment(user,expName,expDesc)
 #' print(experiment)
 
 createExperiment <- function(user,name,description=NULL,protocolIds=NULL){

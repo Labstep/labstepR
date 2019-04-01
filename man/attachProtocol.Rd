@@ -21,7 +21,9 @@ This function allows you to attach a Protocol to an existing Experiment.
 }
 \examples{
 user <- login("demo@labstep.com","demopassword")
-experiment <- createExperiment(user,'My First Experiment','An experiment testing the labstepR library')
+expName = 'My First Experiment'
+expDesc = 'An experiment testing the labstepR library'
+experiment <- createExperiment(user,expName,expDesc)
 protocol <- createProtocol(user,'My First Protocol')
 experiment <- attachProtocol(user,experiment,protocol)
 print(experiment)
