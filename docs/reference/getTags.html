@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Retrieve metadata for a particular Labstep Project — getProject • labstepR</title>
+<title>Retrieve a list of user tags. — getTags • labstepR</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Retrieve metadata for a particular Labstep Project — getProject" />
+<meta property="og:title" content="Retrieve a list of user tags. — getTags" />
 
-<meta property="og:description" content="This function allows you to retrieve metadata for a single project" />
+<meta property="og:description" content="This function allows you to retrieve a list of the users tags." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -94,18 +94,18 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Retrieve metadata for a particular Labstep Project</h1>
+    <h1>Retrieve a list of user tags.</h1>
     
-    <div class="hidden name"><code>getProject.Rd</code></div>
+    <div class="hidden name"><code>getTags.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>This function allows you to retrieve metadata for a single project</p>
+    <p>This function allows you to retrieve a list of the users tags.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>getProject</span>(<span class='no'>user</span>, <span class='no'>id</span>)</pre>
+    <pre class="usage"><span class='fu'>getTags</span>(<span class='no'>user</span>, <span class='kw'>name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>count</span> <span class='kw'>=</span> <span class='fl'>100</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -115,132 +115,308 @@
       <td><p>A labstep user object. Must contain an `api_key` field. Returned from `login` command</p></td>
     </tr>
     <tr>
-      <th>id</th>
-      <td><p>ID of the project to retrieve</p></td>
+      <th>name</th>
+      <td><p>Optionally specify the name of tags to retrieve.</p></td>
+    </tr>
+    <tr>
+      <th>count</th>
+      <td><p>Max number of results to return. Defaults to 100.</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>Returns a `project` object</p>
+    <p>Returns a list of tags with matching names.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>user</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='login.html'>login</a></span>(<span class='st'>"demo@labstep.com"</span>,<span class='st'>"demopassword"</span>)
-<span class='no'>project</span> <span class='kw'>&lt;-</span> <span class='fu'>getProject</span>(<span class='no'>user</span>,<span class='fl'>1186</span>)
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>project</span>)</div><div class='output co'>#&gt; $id
-#&gt; [1] 1186
+<span class='no'>tags</span> <span class='kw'>&lt;-</span> <span class='fu'>getTags</span>(<span class='no'>user</span>)
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>tags</span>)</div><div class='output co'>#&gt; [[1]]
+#&gt; [[1]]$experiment_workflow_count
+#&gt; [1] 4
 #&gt; 
-#&gt; $name
-#&gt; [1] "My First Project"
+#&gt; [[1]]$protocol_collection_count
+#&gt; [1] 0
 #&gt; 
-#&gt; $protocol_collection_count
-#&gt; [1] 63
+#&gt; [[1]]$resource_count
+#&gt; [1] 0
 #&gt; 
-#&gt; $owners
-#&gt; $owners[[1]]
-#&gt; $owners[[1]]$id
+#&gt; [[1]]$id
+#&gt; [1] 246
+#&gt; 
+#&gt; [[1]]$name
+#&gt; [1] "Hello"
+#&gt; 
+#&gt; [[1]]$author
+#&gt; [[1]]$author$id
 #&gt; [1] 4524
 #&gt; 
-#&gt; $owners[[1]]$username
+#&gt; [[1]]$author$username
 #&gt; [1] "demo@labstep.com"
 #&gt; 
-#&gt; $owners[[1]]$name
-#&gt; [1] "Demo Labstep"
 #&gt; 
-#&gt; $owners[[1]]$first_name
-#&gt; [1] "Demo"
-#&gt; 
-#&gt; $owners[[1]]$profile
-#&gt; $owners[[1]]$profile$id
-#&gt; [1] 5751
-#&gt; 
-#&gt; $owners[[1]]$profile$about
-#&gt; NULL
-#&gt; 
-#&gt; $owners[[1]]$profile$photo
-#&gt; NULL
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; $deleted_at
-#&gt; NULL
-#&gt; 
-#&gt; $profile
-#&gt; $profile$id
-#&gt; [1] 5862
-#&gt; 
-#&gt; $profile$about
-#&gt; NULL
-#&gt; 
-#&gt; $profile$photo
-#&gt; NULL
-#&gt; 
-#&gt; 
-#&gt; $invitations
-#&gt; list()
-#&gt; 
-#&gt; $permissions
-#&gt; $permissions$view
+#&gt; [[1]]$permissions
+#&gt; [[1]]$permissions$view
 #&gt; [1] TRUE
 #&gt; 
-#&gt; $permissions$edit
+#&gt; [[1]]$permissions$edit
 #&gt; [1] TRUE
 #&gt; 
-#&gt; $permissions$owner
+#&gt; [[1]]$permissions$owner
 #&gt; [1] TRUE
 #&gt; 
 #&gt; 
-#&gt; $security_policy
-#&gt; $security_policy$id
-#&gt; [1] 1316
 #&gt; 
-#&gt; $security_policy$experiment_workflow
-#&gt; [1] "none"
+#&gt; [[2]]
+#&gt; [[2]]$experiment_workflow_count
+#&gt; [1] 2
 #&gt; 
-#&gt; $security_policy$protocol_collection
-#&gt; [1] "none"
+#&gt; [[2]]$protocol_collection_count
+#&gt; [1] 0
 #&gt; 
-#&gt; $security_policy$resource
-#&gt; [1] "none"
+#&gt; [[2]]$resource_count
+#&gt; [1] 0
 #&gt; 
+#&gt; [[2]]$id
+#&gt; [1] 253
 #&gt; 
-#&gt; $user_groups
-#&gt; $user_groups[[1]]
-#&gt; $user_groups[[1]]$id
-#&gt; [1] 1973
+#&gt; [[2]]$name
+#&gt; [1] "My New Tag"
 #&gt; 
-#&gt; $user_groups[[1]]$type
-#&gt; [1] "owner"
-#&gt; 
-#&gt; $user_groups[[1]]$security_policy
-#&gt; NULL
-#&gt; 
-#&gt; $user_groups[[1]]$user
-#&gt; $user_groups[[1]]$user$id
+#&gt; [[2]]$author
+#&gt; [[2]]$author$id
 #&gt; [1] 4524
 #&gt; 
-#&gt; $user_groups[[1]]$user$username
+#&gt; [[2]]$author$username
 #&gt; [1] "demo@labstep.com"
 #&gt; 
-#&gt; $user_groups[[1]]$user$name
-#&gt; [1] "Demo Labstep"
 #&gt; 
-#&gt; $user_groups[[1]]$user$first_name
-#&gt; [1] "Demo"
+#&gt; [[2]]$permissions
+#&gt; [[2]]$permissions$view
+#&gt; [1] TRUE
 #&gt; 
-#&gt; $user_groups[[1]]$user$profile
-#&gt; $user_groups[[1]]$user$profile$id
-#&gt; [1] 5751
+#&gt; [[2]]$permissions$edit
+#&gt; [1] TRUE
 #&gt; 
-#&gt; $user_groups[[1]]$user$profile$about
-#&gt; NULL
-#&gt; 
-#&gt; $user_groups[[1]]$user$profile$photo
-#&gt; NULL
+#&gt; [[2]]$permissions$owner
+#&gt; [1] TRUE
 #&gt; 
 #&gt; 
+#&gt; 
+#&gt; [[3]]
+#&gt; [[3]]$experiment_workflow_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[3]]$protocol_collection_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[3]]$resource_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[3]]$id
+#&gt; [1] 242
+#&gt; 
+#&gt; [[3]]$name
+#&gt; [1] "MyTag"
+#&gt; 
+#&gt; [[3]]$author
+#&gt; [[3]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[3]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; 
+#&gt; [[3]]$permissions
+#&gt; [[3]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[3]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[3]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[4]]
+#&gt; [[4]]$experiment_workflow_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[4]]$protocol_collection_count
+#&gt; [1] 2
+#&gt; 
+#&gt; [[4]]$resource_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[4]]$id
+#&gt; [1] 241
+#&gt; 
+#&gt; [[4]]$name
+#&gt; [1] "NewTag"
+#&gt; 
+#&gt; [[4]]$author
+#&gt; [[4]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[4]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; 
+#&gt; [[4]]$permissions
+#&gt; [[4]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[4]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[4]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[5]]
+#&gt; [[5]]$experiment_workflow_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[5]]$protocol_collection_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[5]]$resource_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[5]]$id
+#&gt; [1] 243
+#&gt; 
+#&gt; [[5]]$name
+#&gt; [1] "Tag2"
+#&gt; 
+#&gt; [[5]]$author
+#&gt; [[5]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[5]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; 
+#&gt; [[5]]$permissions
+#&gt; [[5]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[5]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[5]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[6]]
+#&gt; [[6]]$experiment_workflow_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[6]]$protocol_collection_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[6]]$resource_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[6]]$id
+#&gt; [1] 245
+#&gt; 
+#&gt; [[6]]$name
+#&gt; [1] "Tag3"
+#&gt; 
+#&gt; [[6]]$author
+#&gt; [[6]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[6]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; 
+#&gt; [[6]]$permissions
+#&gt; [[6]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[6]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[6]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[7]]
+#&gt; [[7]]$experiment_workflow_count
+#&gt; [1] 2
+#&gt; 
+#&gt; [[7]]$protocol_collection_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[7]]$resource_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[7]]$id
+#&gt; [1] 240
+#&gt; 
+#&gt; [[7]]$name
+#&gt; [1] "TestTag"
+#&gt; 
+#&gt; [[7]]$author
+#&gt; [[7]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[7]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; 
+#&gt; [[7]]$permissions
+#&gt; [[7]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[7]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[7]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[8]]
+#&gt; [[8]]$experiment_workflow_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[8]]$protocol_collection_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[8]]$resource_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[8]]$id
+#&gt; [1] 247
+#&gt; 
+#&gt; [[8]]$name
+#&gt; [1] "trello"
+#&gt; 
+#&gt; [[8]]$author
+#&gt; [[8]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[8]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; 
+#&gt; [[8]]$permissions
+#&gt; [[8]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[8]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[8]]$permissions$owner
+#&gt; [1] TRUE
 #&gt; 
 #&gt; 
 #&gt; </div></pre>

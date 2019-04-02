@@ -1,6 +1,6 @@
 Package: labstepR
 Title: An R Package for Working with the Labstep API
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: person("Barney", "Walker", email = "barney@labstep.com", role = c("aut", "cre"))
 Description: Convenient wrapper functions around the Labstep API. Document your experiments, attach files, comments and more.
 Depends: R (>= 3.1.0)
