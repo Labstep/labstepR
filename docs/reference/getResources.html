@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">labstepR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2</span>
       </span>
     </div>
 
@@ -130,10 +130,10 @@
 <span class='no'>resources</span> <span class='kw'>&lt;-</span> <span class='fu'>getResources</span>(<span class='no'>user</span>)
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>resources</span>)</div><div class='output co'>#&gt; [[1]]
 #&gt; [[1]]$id
-#&gt; [1] 391544
+#&gt; [1] 391551
 #&gt; 
 #&gt; [[1]]$created_at
-#&gt; [1] "2019-04-02T16:27:24+00:00"
+#&gt; [1] "2019-04-03T09:50:20+00:00"
 #&gt; 
 #&gt; [[1]]$deleted_at
 #&gt; NULL
@@ -142,15 +142,13 @@
 #&gt; [1] "available"
 #&gt; 
 #&gt; [[1]]$name
-#&gt; [1] "My First Resource"
+#&gt; [1] "Duplicate of: My First Resource"
 #&gt; 
 #&gt; [[1]]$identifier
-#&gt; [1] "b3a47202-c35b-495c-b5b1-9a8388019579"
+#&gt; [1] "805dd0a9-f848-441b-a459-908cbdac7575"
 #&gt; 
 #&gt; [[1]]$metadata
-#&gt; [[1]]$metadata$name
-#&gt; [1] "My First Resource"
-#&gt; 
+#&gt; list()
 #&gt; 
 #&gt; [[1]]$author
 #&gt; [[1]]$author$id
@@ -172,11 +170,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[1]]$thread
-#&gt; [[1]]$thread$comments_count
+#&gt; [[1]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[1]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[1]]$thread$id
-#&gt; [1] 477408
+#&gt; [1] 477476
+#&gt; 
+#&gt; 
+#&gt; [[1]]$review_thread
+#&gt; [[1]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[1]]$review_thread$id
+#&gt; [1] 106710
+#&gt; 
+#&gt; [[1]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[1]]$image
@@ -187,6 +199,12 @@
 #&gt; 
 #&gt; [[1]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[1]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[1]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[1]]$permissions
 #&gt; [[1]]$permissions$view
@@ -202,10 +220,10 @@
 #&gt; 
 #&gt; [[2]]
 #&gt; [[2]]$id
-#&gt; [1] 391543
+#&gt; [1] 392824
 #&gt; 
 #&gt; [[2]]$created_at
-#&gt; [1] "2019-04-02T16:26:24+00:00"
+#&gt; [1] "2019-06-03T14:43:25+00:00"
 #&gt; 
 #&gt; [[2]]$deleted_at
 #&gt; NULL
@@ -217,7 +235,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[2]]$identifier
-#&gt; [1] "e1a45980-ca96-407a-8662-ab12fece70fc"
+#&gt; [1] "549598e3-1c1e-4b2a-94cf-2e159ca4f34b"
 #&gt; 
 #&gt; [[2]]$metadata
 #&gt; [[2]]$metadata$name
@@ -244,11 +262,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[2]]$thread
-#&gt; [[2]]$thread$comments_count
+#&gt; [[2]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[2]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[2]]$thread$id
-#&gt; [1] 477402
+#&gt; [1] 506764
+#&gt; 
+#&gt; 
+#&gt; [[2]]$review_thread
+#&gt; [[2]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[2]]$review_thread$id
+#&gt; [1] 392398
+#&gt; 
+#&gt; [[2]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[2]]$image
@@ -259,6 +291,12 @@
 #&gt; 
 #&gt; [[2]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[2]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[2]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[2]]$permissions
 #&gt; [[2]]$permissions$view
@@ -274,10 +312,10 @@
 #&gt; 
 #&gt; [[3]]
 #&gt; [[3]]$id
-#&gt; [1] 391542
+#&gt; [1] 392823
 #&gt; 
 #&gt; [[3]]$created_at
-#&gt; [1] "2019-04-02T16:24:18+00:00"
+#&gt; [1] "2019-06-03T14:42:17+00:00"
 #&gt; 
 #&gt; [[3]]$deleted_at
 #&gt; NULL
@@ -289,7 +327,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[3]]$identifier
-#&gt; [1] "88c3fea2-ef54-4b75-b334-d1b4aae5bb4c"
+#&gt; [1] "e8cdbe2f-bddc-466c-abe8-db8e99412da2"
 #&gt; 
 #&gt; [[3]]$metadata
 #&gt; [[3]]$metadata$name
@@ -316,11 +354,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[3]]$thread
-#&gt; [[3]]$thread$comments_count
+#&gt; [[3]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[3]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[3]]$thread$id
-#&gt; [1] 477396
+#&gt; [1] 506756
+#&gt; 
+#&gt; 
+#&gt; [[3]]$review_thread
+#&gt; [[3]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[3]]$review_thread$id
+#&gt; [1] 392397
+#&gt; 
+#&gt; [[3]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[3]]$image
@@ -331,6 +383,12 @@
 #&gt; 
 #&gt; [[3]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[3]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[3]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[3]]$permissions
 #&gt; [[3]]$permissions$view
@@ -346,10 +404,10 @@
 #&gt; 
 #&gt; [[4]]
 #&gt; [[4]]$id
-#&gt; [1] 391528
+#&gt; [1] 391544
 #&gt; 
 #&gt; [[4]]$created_at
-#&gt; [1] "2019-04-01T17:02:33+00:00"
+#&gt; [1] "2019-04-02T16:27:24+00:00"
 #&gt; 
 #&gt; [[4]]$deleted_at
 #&gt; NULL
@@ -361,7 +419,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[4]]$identifier
-#&gt; [1] "0283cb5e-7ce7-4a0f-819d-7c7b5cd91f0b"
+#&gt; [1] "b3a47202-c35b-495c-b5b1-9a8388019579"
 #&gt; 
 #&gt; [[4]]$metadata
 #&gt; [[4]]$metadata$name
@@ -388,11 +446,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[4]]$thread
-#&gt; [[4]]$thread$comments_count
+#&gt; [[4]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[4]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[4]]$thread$id
-#&gt; [1] 477178
+#&gt; [1] 477408
+#&gt; 
+#&gt; 
+#&gt; [[4]]$review_thread
+#&gt; [[4]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[4]]$review_thread$id
+#&gt; [1] 185748
+#&gt; 
+#&gt; [[4]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[4]]$image
@@ -403,6 +475,12 @@
 #&gt; 
 #&gt; [[4]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[4]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[4]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[4]]$permissions
 #&gt; [[4]]$permissions$view
@@ -418,10 +496,10 @@
 #&gt; 
 #&gt; [[5]]
 #&gt; [[5]]$id
-#&gt; [1] 391527
+#&gt; [1] 391543
 #&gt; 
 #&gt; [[5]]$created_at
-#&gt; [1] "2019-04-01T17:01:29+00:00"
+#&gt; [1] "2019-04-02T16:26:24+00:00"
 #&gt; 
 #&gt; [[5]]$deleted_at
 #&gt; NULL
@@ -433,7 +511,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[5]]$identifier
-#&gt; [1] "eb3b3c51-9e61-48a0-888f-22e31fc9eb77"
+#&gt; [1] "e1a45980-ca96-407a-8662-ab12fece70fc"
 #&gt; 
 #&gt; [[5]]$metadata
 #&gt; [[5]]$metadata$name
@@ -460,11 +538,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[5]]$thread
-#&gt; [[5]]$thread$comments_count
+#&gt; [[5]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[5]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[5]]$thread$id
-#&gt; [1] 477172
+#&gt; [1] 477402
+#&gt; 
+#&gt; 
+#&gt; [[5]]$review_thread
+#&gt; [[5]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[5]]$review_thread$id
+#&gt; [1] 185749
+#&gt; 
+#&gt; [[5]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[5]]$image
@@ -475,6 +567,12 @@
 #&gt; 
 #&gt; [[5]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[5]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[5]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[5]]$permissions
 #&gt; [[5]]$permissions$view
@@ -490,10 +588,10 @@
 #&gt; 
 #&gt; [[6]]
 #&gt; [[6]]$id
-#&gt; [1] 391526
+#&gt; [1] 391542
 #&gt; 
 #&gt; [[6]]$created_at
-#&gt; [1] "2019-04-01T16:55:54+00:00"
+#&gt; [1] "2019-04-02T16:24:18+00:00"
 #&gt; 
 #&gt; [[6]]$deleted_at
 #&gt; NULL
@@ -505,7 +603,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[6]]$identifier
-#&gt; [1] "c8845946-8cb6-431c-bccb-ebefcab8e7c9"
+#&gt; [1] "88c3fea2-ef54-4b75-b334-d1b4aae5bb4c"
 #&gt; 
 #&gt; [[6]]$metadata
 #&gt; [[6]]$metadata$name
@@ -532,11 +630,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[6]]$thread
-#&gt; [[6]]$thread$comments_count
+#&gt; [[6]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[6]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[6]]$thread$id
-#&gt; [1] 477166
+#&gt; [1] 477396
+#&gt; 
+#&gt; 
+#&gt; [[6]]$review_thread
+#&gt; [[6]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[6]]$review_thread$id
+#&gt; [1] 185750
+#&gt; 
+#&gt; [[6]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[6]]$image
@@ -547,6 +659,12 @@
 #&gt; 
 #&gt; [[6]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[6]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[6]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[6]]$permissions
 #&gt; [[6]]$permissions$view
@@ -562,10 +680,10 @@
 #&gt; 
 #&gt; [[7]]
 #&gt; [[7]]$id
-#&gt; [1] 391525
+#&gt; [1] 391528
 #&gt; 
 #&gt; [[7]]$created_at
-#&gt; [1] "2019-04-01T16:51:47+00:00"
+#&gt; [1] "2019-04-01T17:02:33+00:00"
 #&gt; 
 #&gt; [[7]]$deleted_at
 #&gt; NULL
@@ -577,7 +695,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[7]]$identifier
-#&gt; [1] "200493c8-3e41-43be-a05f-1043cc5f0fec"
+#&gt; [1] "0283cb5e-7ce7-4a0f-819d-7c7b5cd91f0b"
 #&gt; 
 #&gt; [[7]]$metadata
 #&gt; [[7]]$metadata$name
@@ -604,11 +722,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[7]]$thread
-#&gt; [[7]]$thread$comments_count
+#&gt; [[7]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[7]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[7]]$thread$id
-#&gt; [1] 477135
+#&gt; [1] 477178
+#&gt; 
+#&gt; 
+#&gt; [[7]]$review_thread
+#&gt; [[7]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[7]]$review_thread$id
+#&gt; [1] 185751
+#&gt; 
+#&gt; [[7]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[7]]$image
@@ -619,6 +751,12 @@
 #&gt; 
 #&gt; [[7]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[7]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[7]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[7]]$permissions
 #&gt; [[7]]$permissions$view
@@ -634,10 +772,10 @@
 #&gt; 
 #&gt; [[8]]
 #&gt; [[8]]$id
-#&gt; [1] 391524
+#&gt; [1] 391527
 #&gt; 
 #&gt; [[8]]$created_at
-#&gt; [1] "2019-04-01T16:50:36+00:00"
+#&gt; [1] "2019-04-01T17:01:29+00:00"
 #&gt; 
 #&gt; [[8]]$deleted_at
 #&gt; NULL
@@ -649,7 +787,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[8]]$identifier
-#&gt; [1] "46e90149-c439-4d4b-a37a-d43f15e72b73"
+#&gt; [1] "eb3b3c51-9e61-48a0-888f-22e31fc9eb77"
 #&gt; 
 #&gt; [[8]]$metadata
 #&gt; [[8]]$metadata$name
@@ -676,11 +814,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[8]]$thread
-#&gt; [[8]]$thread$comments_count
+#&gt; [[8]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[8]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[8]]$thread$id
-#&gt; [1] 477126
+#&gt; [1] 477172
+#&gt; 
+#&gt; 
+#&gt; [[8]]$review_thread
+#&gt; [[8]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[8]]$review_thread$id
+#&gt; [1] 185752
+#&gt; 
+#&gt; [[8]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[8]]$image
@@ -691,6 +843,12 @@
 #&gt; 
 #&gt; [[8]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[8]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[8]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[8]]$permissions
 #&gt; [[8]]$permissions$view
@@ -706,10 +864,10 @@
 #&gt; 
 #&gt; [[9]]
 #&gt; [[9]]$id
-#&gt; [1] 391523
+#&gt; [1] 391526
 #&gt; 
 #&gt; [[9]]$created_at
-#&gt; [1] "2019-04-01T16:47:51+00:00"
+#&gt; [1] "2019-04-01T16:55:54+00:00"
 #&gt; 
 #&gt; [[9]]$deleted_at
 #&gt; NULL
@@ -721,7 +879,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[9]]$identifier
-#&gt; [1] "ec7fe731-1fbe-4c93-9820-875b3e8ff6bc"
+#&gt; [1] "c8845946-8cb6-431c-bccb-ebefcab8e7c9"
 #&gt; 
 #&gt; [[9]]$metadata
 #&gt; [[9]]$metadata$name
@@ -748,11 +906,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[9]]$thread
-#&gt; [[9]]$thread$comments_count
+#&gt; [[9]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[9]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[9]]$thread$id
-#&gt; [1] 477120
+#&gt; [1] 477166
+#&gt; 
+#&gt; 
+#&gt; [[9]]$review_thread
+#&gt; [[9]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[9]]$review_thread$id
+#&gt; [1] 185753
+#&gt; 
+#&gt; [[9]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[9]]$image
@@ -763,6 +935,12 @@
 #&gt; 
 #&gt; [[9]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[9]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[9]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[9]]$permissions
 #&gt; [[9]]$permissions$view
@@ -778,10 +956,10 @@
 #&gt; 
 #&gt; [[10]]
 #&gt; [[10]]$id
-#&gt; [1] 391522
+#&gt; [1] 391525
 #&gt; 
 #&gt; [[10]]$created_at
-#&gt; [1] "2019-04-01T16:46:01+00:00"
+#&gt; [1] "2019-04-01T16:51:47+00:00"
 #&gt; 
 #&gt; [[10]]$deleted_at
 #&gt; NULL
@@ -793,7 +971,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[10]]$identifier
-#&gt; [1] "ed104873-5e3c-401c-ab14-adcb397e61b7"
+#&gt; [1] "200493c8-3e41-43be-a05f-1043cc5f0fec"
 #&gt; 
 #&gt; [[10]]$metadata
 #&gt; [[10]]$metadata$name
@@ -820,11 +998,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[10]]$thread
-#&gt; [[10]]$thread$comments_count
+#&gt; [[10]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[10]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[10]]$thread$id
-#&gt; [1] 477114
+#&gt; [1] 477135
+#&gt; 
+#&gt; 
+#&gt; [[10]]$review_thread
+#&gt; [[10]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[10]]$review_thread$id
+#&gt; [1] 185754
+#&gt; 
+#&gt; [[10]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[10]]$image
@@ -835,6 +1027,12 @@
 #&gt; 
 #&gt; [[10]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[10]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[10]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[10]]$permissions
 #&gt; [[10]]$permissions$view
@@ -850,10 +1048,10 @@
 #&gt; 
 #&gt; [[11]]
 #&gt; [[11]]$id
-#&gt; [1] 391521
+#&gt; [1] 391524
 #&gt; 
 #&gt; [[11]]$created_at
-#&gt; [1] "2019-04-01T16:38:26+00:00"
+#&gt; [1] "2019-04-01T16:50:36+00:00"
 #&gt; 
 #&gt; [[11]]$deleted_at
 #&gt; NULL
@@ -865,7 +1063,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[11]]$identifier
-#&gt; [1] "ff552f8d-9658-4219-883f-46b51ed4ffbc"
+#&gt; [1] "46e90149-c439-4d4b-a37a-d43f15e72b73"
 #&gt; 
 #&gt; [[11]]$metadata
 #&gt; [[11]]$metadata$name
@@ -892,11 +1090,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[11]]$thread
-#&gt; [[11]]$thread$comments_count
+#&gt; [[11]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[11]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[11]]$thread$id
-#&gt; [1] 477108
+#&gt; [1] 477126
+#&gt; 
+#&gt; 
+#&gt; [[11]]$review_thread
+#&gt; [[11]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[11]]$review_thread$id
+#&gt; [1] 185755
+#&gt; 
+#&gt; [[11]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[11]]$image
@@ -907,6 +1119,12 @@
 #&gt; 
 #&gt; [[11]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[11]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[11]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[11]]$permissions
 #&gt; [[11]]$permissions$view
@@ -922,10 +1140,10 @@
 #&gt; 
 #&gt; [[12]]
 #&gt; [[12]]$id
-#&gt; [1] 391520
+#&gt; [1] 391523
 #&gt; 
 #&gt; [[12]]$created_at
-#&gt; [1] "2019-04-01T16:33:38+00:00"
+#&gt; [1] "2019-04-01T16:47:51+00:00"
 #&gt; 
 #&gt; [[12]]$deleted_at
 #&gt; NULL
@@ -937,7 +1155,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[12]]$identifier
-#&gt; [1] "431e271c-355e-4908-8f86-f4e3ed35d0a4"
+#&gt; [1] "ec7fe731-1fbe-4c93-9820-875b3e8ff6bc"
 #&gt; 
 #&gt; [[12]]$metadata
 #&gt; [[12]]$metadata$name
@@ -964,11 +1182,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[12]]$thread
-#&gt; [[12]]$thread$comments_count
+#&gt; [[12]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[12]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[12]]$thread$id
-#&gt; [1] 477102
+#&gt; [1] 477120
+#&gt; 
+#&gt; 
+#&gt; [[12]]$review_thread
+#&gt; [[12]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[12]]$review_thread$id
+#&gt; [1] 185756
+#&gt; 
+#&gt; [[12]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[12]]$image
@@ -979,6 +1211,12 @@
 #&gt; 
 #&gt; [[12]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[12]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[12]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[12]]$permissions
 #&gt; [[12]]$permissions$view
@@ -994,10 +1232,10 @@
 #&gt; 
 #&gt; [[13]]
 #&gt; [[13]]$id
-#&gt; [1] 391518
+#&gt; [1] 391522
 #&gt; 
 #&gt; [[13]]$created_at
-#&gt; [1] "2019-04-01T16:13:28+00:00"
+#&gt; [1] "2019-04-01T16:46:01+00:00"
 #&gt; 
 #&gt; [[13]]$deleted_at
 #&gt; NULL
@@ -1009,7 +1247,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[13]]$identifier
-#&gt; [1] "96a68da5-0909-49b9-939a-f1ea450f2bdd"
+#&gt; [1] "ed104873-5e3c-401c-ab14-adcb397e61b7"
 #&gt; 
 #&gt; [[13]]$metadata
 #&gt; [[13]]$metadata$name
@@ -1036,11 +1274,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[13]]$thread
-#&gt; [[13]]$thread$comments_count
+#&gt; [[13]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[13]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[13]]$thread$id
-#&gt; [1] 477048
+#&gt; [1] 477114
+#&gt; 
+#&gt; 
+#&gt; [[13]]$review_thread
+#&gt; [[13]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[13]]$review_thread$id
+#&gt; [1] 185757
+#&gt; 
+#&gt; [[13]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[13]]$image
@@ -1051,6 +1303,12 @@
 #&gt; 
 #&gt; [[13]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[13]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[13]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[13]]$permissions
 #&gt; [[13]]$permissions$view
@@ -1066,10 +1324,10 @@
 #&gt; 
 #&gt; [[14]]
 #&gt; [[14]]$id
-#&gt; [1] 391517
+#&gt; [1] 391521
 #&gt; 
 #&gt; [[14]]$created_at
-#&gt; [1] "2019-04-01T15:49:41+00:00"
+#&gt; [1] "2019-04-01T16:38:26+00:00"
 #&gt; 
 #&gt; [[14]]$deleted_at
 #&gt; NULL
@@ -1081,7 +1339,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[14]]$identifier
-#&gt; [1] "3881b3d5-fe25-4082-87e9-1bcff5364e42"
+#&gt; [1] "ff552f8d-9658-4219-883f-46b51ed4ffbc"
 #&gt; 
 #&gt; [[14]]$metadata
 #&gt; [[14]]$metadata$name
@@ -1108,11 +1366,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[14]]$thread
-#&gt; [[14]]$thread$comments_count
+#&gt; [[14]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[14]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[14]]$thread$id
-#&gt; [1] 477017
+#&gt; [1] 477108
+#&gt; 
+#&gt; 
+#&gt; [[14]]$review_thread
+#&gt; [[14]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[14]]$review_thread$id
+#&gt; [1] 185758
+#&gt; 
+#&gt; [[14]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[14]]$image
@@ -1123,6 +1395,12 @@
 #&gt; 
 #&gt; [[14]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[14]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[14]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[14]]$permissions
 #&gt; [[14]]$permissions$view
@@ -1138,10 +1416,10 @@
 #&gt; 
 #&gt; [[15]]
 #&gt; [[15]]$id
-#&gt; [1] 391516
+#&gt; [1] 391520
 #&gt; 
 #&gt; [[15]]$created_at
-#&gt; [1] "2019-04-01T15:34:20+00:00"
+#&gt; [1] "2019-04-01T16:33:38+00:00"
 #&gt; 
 #&gt; [[15]]$deleted_at
 #&gt; NULL
@@ -1153,7 +1431,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[15]]$identifier
-#&gt; [1] "0b4935cd-ccd5-426a-8bf2-50a9d4d6117a"
+#&gt; [1] "431e271c-355e-4908-8f86-f4e3ed35d0a4"
 #&gt; 
 #&gt; [[15]]$metadata
 #&gt; [[15]]$metadata$name
@@ -1180,11 +1458,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[15]]$thread
-#&gt; [[15]]$thread$comments_count
+#&gt; [[15]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[15]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[15]]$thread$id
-#&gt; [1] 477010
+#&gt; [1] 477102
+#&gt; 
+#&gt; 
+#&gt; [[15]]$review_thread
+#&gt; [[15]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[15]]$review_thread$id
+#&gt; [1] 185759
+#&gt; 
+#&gt; [[15]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[15]]$image
@@ -1195,6 +1487,12 @@
 #&gt; 
 #&gt; [[15]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[15]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[15]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[15]]$permissions
 #&gt; [[15]]$permissions$view
@@ -1210,10 +1508,10 @@
 #&gt; 
 #&gt; [[16]]
 #&gt; [[16]]$id
-#&gt; [1] 391515
+#&gt; [1] 391518
 #&gt; 
 #&gt; [[16]]$created_at
-#&gt; [1] "2019-04-01T15:33:36+00:00"
+#&gt; [1] "2019-04-01T16:13:28+00:00"
 #&gt; 
 #&gt; [[16]]$deleted_at
 #&gt; NULL
@@ -1225,7 +1523,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[16]]$identifier
-#&gt; [1] "a68405c2-61e1-4755-ba16-1e55e8a1c585"
+#&gt; [1] "96a68da5-0909-49b9-939a-f1ea450f2bdd"
 #&gt; 
 #&gt; [[16]]$metadata
 #&gt; [[16]]$metadata$name
@@ -1252,11 +1550,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[16]]$thread
-#&gt; [[16]]$thread$comments_count
+#&gt; [[16]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[16]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[16]]$thread$id
-#&gt; [1] 477004
+#&gt; [1] 477048
+#&gt; 
+#&gt; 
+#&gt; [[16]]$review_thread
+#&gt; [[16]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[16]]$review_thread$id
+#&gt; [1] 185760
+#&gt; 
+#&gt; [[16]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[16]]$image
@@ -1267,6 +1579,12 @@
 #&gt; 
 #&gt; [[16]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[16]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[16]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[16]]$permissions
 #&gt; [[16]]$permissions$view
@@ -1282,10 +1600,10 @@
 #&gt; 
 #&gt; [[17]]
 #&gt; [[17]]$id
-#&gt; [1] 391514
+#&gt; [1] 391517
 #&gt; 
 #&gt; [[17]]$created_at
-#&gt; [1] "2019-04-01T15:22:05+00:00"
+#&gt; [1] "2019-04-01T15:49:41+00:00"
 #&gt; 
 #&gt; [[17]]$deleted_at
 #&gt; NULL
@@ -1297,7 +1615,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[17]]$identifier
-#&gt; [1] "dbd58f79-435e-4452-ae1d-276b26b2e309"
+#&gt; [1] "3881b3d5-fe25-4082-87e9-1bcff5364e42"
 #&gt; 
 #&gt; [[17]]$metadata
 #&gt; [[17]]$metadata$name
@@ -1324,11 +1642,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[17]]$thread
-#&gt; [[17]]$thread$comments_count
+#&gt; [[17]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[17]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[17]]$thread$id
-#&gt; [1] 476993
+#&gt; [1] 477017
+#&gt; 
+#&gt; 
+#&gt; [[17]]$review_thread
+#&gt; [[17]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[17]]$review_thread$id
+#&gt; [1] 185761
+#&gt; 
+#&gt; [[17]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[17]]$image
@@ -1339,6 +1671,12 @@
 #&gt; 
 #&gt; [[17]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[17]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[17]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[17]]$permissions
 #&gt; [[17]]$permissions$view
@@ -1354,10 +1692,10 @@
 #&gt; 
 #&gt; [[18]]
 #&gt; [[18]]$id
-#&gt; [1] 391513
+#&gt; [1] 391516
 #&gt; 
 #&gt; [[18]]$created_at
-#&gt; [1] "2019-04-01T15:20:27+00:00"
+#&gt; [1] "2019-04-01T15:34:20+00:00"
 #&gt; 
 #&gt; [[18]]$deleted_at
 #&gt; NULL
@@ -1369,7 +1707,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[18]]$identifier
-#&gt; [1] "bdf58322-6950-4b89-a6e9-a1b41ce431d2"
+#&gt; [1] "0b4935cd-ccd5-426a-8bf2-50a9d4d6117a"
 #&gt; 
 #&gt; [[18]]$metadata
 #&gt; [[18]]$metadata$name
@@ -1396,11 +1734,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[18]]$thread
-#&gt; [[18]]$thread$comments_count
+#&gt; [[18]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[18]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[18]]$thread$id
-#&gt; [1] 476989
+#&gt; [1] 477010
+#&gt; 
+#&gt; 
+#&gt; [[18]]$review_thread
+#&gt; [[18]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[18]]$review_thread$id
+#&gt; [1] 185762
+#&gt; 
+#&gt; [[18]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[18]]$image
@@ -1411,6 +1763,12 @@
 #&gt; 
 #&gt; [[18]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[18]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[18]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[18]]$permissions
 #&gt; [[18]]$permissions$view
@@ -1426,10 +1784,10 @@
 #&gt; 
 #&gt; [[19]]
 #&gt; [[19]]$id
-#&gt; [1] 391512
+#&gt; [1] 391515
 #&gt; 
 #&gt; [[19]]$created_at
-#&gt; [1] "2019-04-01T15:02:14+00:00"
+#&gt; [1] "2019-04-01T15:33:36+00:00"
 #&gt; 
 #&gt; [[19]]$deleted_at
 #&gt; NULL
@@ -1441,7 +1799,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[19]]$identifier
-#&gt; [1] "48f99a79-5ccc-40cc-b3cd-5b78144d8833"
+#&gt; [1] "a68405c2-61e1-4755-ba16-1e55e8a1c585"
 #&gt; 
 #&gt; [[19]]$metadata
 #&gt; [[19]]$metadata$name
@@ -1468,11 +1826,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[19]]$thread
-#&gt; [[19]]$thread$comments_count
+#&gt; [[19]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[19]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[19]]$thread$id
-#&gt; [1] 476985
+#&gt; [1] 477004
+#&gt; 
+#&gt; 
+#&gt; [[19]]$review_thread
+#&gt; [[19]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[19]]$review_thread$id
+#&gt; [1] 185763
+#&gt; 
+#&gt; [[19]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[19]]$image
@@ -1483,6 +1855,12 @@
 #&gt; 
 #&gt; [[19]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[19]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[19]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[19]]$permissions
 #&gt; [[19]]$permissions$view
@@ -1498,10 +1876,10 @@
 #&gt; 
 #&gt; [[20]]
 #&gt; [[20]]$id
-#&gt; [1] 391511
+#&gt; [1] 391514
 #&gt; 
 #&gt; [[20]]$created_at
-#&gt; [1] "2019-04-01T14:57:31+00:00"
+#&gt; [1] "2019-04-01T15:22:05+00:00"
 #&gt; 
 #&gt; [[20]]$deleted_at
 #&gt; NULL
@@ -1513,7 +1891,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[20]]$identifier
-#&gt; [1] "7e39d388-ac80-439a-bf5f-df4ea0d67ce1"
+#&gt; [1] "dbd58f79-435e-4452-ae1d-276b26b2e309"
 #&gt; 
 #&gt; [[20]]$metadata
 #&gt; [[20]]$metadata$name
@@ -1540,11 +1918,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[20]]$thread
-#&gt; [[20]]$thread$comments_count
+#&gt; [[20]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[20]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[20]]$thread$id
-#&gt; [1] 476981
+#&gt; [1] 476993
+#&gt; 
+#&gt; 
+#&gt; [[20]]$review_thread
+#&gt; [[20]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[20]]$review_thread$id
+#&gt; [1] 185764
+#&gt; 
+#&gt; [[20]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[20]]$image
@@ -1555,6 +1947,12 @@
 #&gt; 
 #&gt; [[20]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[20]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[20]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[20]]$permissions
 #&gt; [[20]]$permissions$view
@@ -1570,10 +1968,10 @@
 #&gt; 
 #&gt; [[21]]
 #&gt; [[21]]$id
-#&gt; [1] 391510
+#&gt; [1] 391513
 #&gt; 
 #&gt; [[21]]$created_at
-#&gt; [1] "2019-04-01T14:48:43+00:00"
+#&gt; [1] "2019-04-01T15:20:27+00:00"
 #&gt; 
 #&gt; [[21]]$deleted_at
 #&gt; NULL
@@ -1585,7 +1983,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[21]]$identifier
-#&gt; [1] "6761018f-d4b8-436d-9eff-03595547af7a"
+#&gt; [1] "bdf58322-6950-4b89-a6e9-a1b41ce431d2"
 #&gt; 
 #&gt; [[21]]$metadata
 #&gt; [[21]]$metadata$name
@@ -1612,11 +2010,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[21]]$thread
-#&gt; [[21]]$thread$comments_count
+#&gt; [[21]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[21]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[21]]$thread$id
-#&gt; [1] 476977
+#&gt; [1] 476989
+#&gt; 
+#&gt; 
+#&gt; [[21]]$review_thread
+#&gt; [[21]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[21]]$review_thread$id
+#&gt; [1] 185765
+#&gt; 
+#&gt; [[21]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[21]]$image
@@ -1627,6 +2039,12 @@
 #&gt; 
 #&gt; [[21]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[21]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[21]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[21]]$permissions
 #&gt; [[21]]$permissions$view
@@ -1642,10 +2060,10 @@
 #&gt; 
 #&gt; [[22]]
 #&gt; [[22]]$id
-#&gt; [1] 391509
+#&gt; [1] 391512
 #&gt; 
 #&gt; [[22]]$created_at
-#&gt; [1] "2019-04-01T14:46:12+00:00"
+#&gt; [1] "2019-04-01T15:02:14+00:00"
 #&gt; 
 #&gt; [[22]]$deleted_at
 #&gt; NULL
@@ -1657,7 +2075,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[22]]$identifier
-#&gt; [1] "302f8c54-1f26-4d4d-a31f-86f320e675fc"
+#&gt; [1] "48f99a79-5ccc-40cc-b3cd-5b78144d8833"
 #&gt; 
 #&gt; [[22]]$metadata
 #&gt; [[22]]$metadata$name
@@ -1684,11 +2102,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[22]]$thread
-#&gt; [[22]]$thread$comments_count
+#&gt; [[22]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[22]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[22]]$thread$id
-#&gt; [1] 476973
+#&gt; [1] 476985
+#&gt; 
+#&gt; 
+#&gt; [[22]]$review_thread
+#&gt; [[22]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[22]]$review_thread$id
+#&gt; [1] 185766
+#&gt; 
+#&gt; [[22]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[22]]$image
@@ -1699,6 +2131,12 @@
 #&gt; 
 #&gt; [[22]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[22]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[22]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[22]]$permissions
 #&gt; [[22]]$permissions$view
@@ -1714,10 +2152,10 @@
 #&gt; 
 #&gt; [[23]]
 #&gt; [[23]]$id
-#&gt; [1] 391508
+#&gt; [1] 391511
 #&gt; 
 #&gt; [[23]]$created_at
-#&gt; [1] "2019-04-01T14:42:21+00:00"
+#&gt; [1] "2019-04-01T14:57:31+00:00"
 #&gt; 
 #&gt; [[23]]$deleted_at
 #&gt; NULL
@@ -1729,7 +2167,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[23]]$identifier
-#&gt; [1] "7f7abdf7-d91e-451b-adae-32c4890c82e0"
+#&gt; [1] "7e39d388-ac80-439a-bf5f-df4ea0d67ce1"
 #&gt; 
 #&gt; [[23]]$metadata
 #&gt; [[23]]$metadata$name
@@ -1756,11 +2194,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[23]]$thread
-#&gt; [[23]]$thread$comments_count
+#&gt; [[23]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[23]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[23]]$thread$id
-#&gt; [1] 476969
+#&gt; [1] 476981
+#&gt; 
+#&gt; 
+#&gt; [[23]]$review_thread
+#&gt; [[23]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[23]]$review_thread$id
+#&gt; [1] 185767
+#&gt; 
+#&gt; [[23]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[23]]$image
@@ -1771,6 +2223,12 @@
 #&gt; 
 #&gt; [[23]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[23]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[23]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[23]]$permissions
 #&gt; [[23]]$permissions$view
@@ -1786,10 +2244,10 @@
 #&gt; 
 #&gt; [[24]]
 #&gt; [[24]]$id
-#&gt; [1] 391507
+#&gt; [1] 391510
 #&gt; 
 #&gt; [[24]]$created_at
-#&gt; [1] "2019-04-01T14:35:51+00:00"
+#&gt; [1] "2019-04-01T14:48:43+00:00"
 #&gt; 
 #&gt; [[24]]$deleted_at
 #&gt; NULL
@@ -1801,7 +2259,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[24]]$identifier
-#&gt; [1] "c710c86e-7135-40ef-a9a1-9cf3f5608564"
+#&gt; [1] "6761018f-d4b8-436d-9eff-03595547af7a"
 #&gt; 
 #&gt; [[24]]$metadata
 #&gt; [[24]]$metadata$name
@@ -1828,11 +2286,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[24]]$thread
-#&gt; [[24]]$thread$comments_count
+#&gt; [[24]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[24]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[24]]$thread$id
-#&gt; [1] 476965
+#&gt; [1] 476977
+#&gt; 
+#&gt; 
+#&gt; [[24]]$review_thread
+#&gt; [[24]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[24]]$review_thread$id
+#&gt; [1] 185768
+#&gt; 
+#&gt; [[24]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[24]]$image
@@ -1843,6 +2315,12 @@
 #&gt; 
 #&gt; [[24]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[24]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[24]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[24]]$permissions
 #&gt; [[24]]$permissions$view
@@ -1858,10 +2336,10 @@
 #&gt; 
 #&gt; [[25]]
 #&gt; [[25]]$id
-#&gt; [1] 391506
+#&gt; [1] 391509
 #&gt; 
 #&gt; [[25]]$created_at
-#&gt; [1] "2019-04-01T14:35:07+00:00"
+#&gt; [1] "2019-04-01T14:46:12+00:00"
 #&gt; 
 #&gt; [[25]]$deleted_at
 #&gt; NULL
@@ -1873,7 +2351,7 @@
 #&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[25]]$identifier
-#&gt; [1] "4e4138c5-438c-4be3-8b24-18208b9763b4"
+#&gt; [1] "302f8c54-1f26-4d4d-a31f-86f320e675fc"
 #&gt; 
 #&gt; [[25]]$metadata
 #&gt; [[25]]$metadata$name
@@ -1900,11 +2378,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[25]]$thread
-#&gt; [[25]]$thread$comments_count
+#&gt; [[25]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[25]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[25]]$thread$id
-#&gt; [1] 476961
+#&gt; [1] 476973
+#&gt; 
+#&gt; 
+#&gt; [[25]]$review_thread
+#&gt; [[25]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[25]]$review_thread$id
+#&gt; [1] 185769
+#&gt; 
+#&gt; [[25]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[25]]$image
@@ -1915,6 +2407,12 @@
 #&gt; 
 #&gt; [[25]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[25]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[25]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[25]]$permissions
 #&gt; [[25]]$permissions$view
@@ -1930,10 +2428,10 @@
 #&gt; 
 #&gt; [[26]]
 #&gt; [[26]]$id
-#&gt; [1] 391443
+#&gt; [1] 391508
 #&gt; 
 #&gt; [[26]]$created_at
-#&gt; [1] "2019-03-28T14:29:00+00:00"
+#&gt; [1] "2019-04-01T14:42:21+00:00"
 #&gt; 
 #&gt; [[26]]$deleted_at
 #&gt; NULL
@@ -1942,14 +2440,14 @@
 #&gt; [1] "available"
 #&gt; 
 #&gt; [[26]]$name
-#&gt; [1] "My Resource"
+#&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[26]]$identifier
-#&gt; [1] "fcef1b47-4ff6-4830-9177-9ebb92706129"
+#&gt; [1] "7f7abdf7-d91e-451b-adae-32c4890c82e0"
 #&gt; 
 #&gt; [[26]]$metadata
 #&gt; [[26]]$metadata$name
-#&gt; [1] "My Resource"
+#&gt; [1] "My First Resource"
 #&gt; 
 #&gt; 
 #&gt; [[26]]$author
@@ -1972,11 +2470,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[26]]$thread
-#&gt; [[26]]$thread$comments_count
+#&gt; [[26]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[26]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[26]]$thread$id
-#&gt; [1] 475883
+#&gt; [1] 476969
+#&gt; 
+#&gt; 
+#&gt; [[26]]$review_thread
+#&gt; [[26]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[26]]$review_thread$id
+#&gt; [1] 185770
+#&gt; 
+#&gt; [[26]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[26]]$image
@@ -1987,6 +2499,12 @@
 #&gt; 
 #&gt; [[26]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[26]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[26]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[26]]$permissions
 #&gt; [[26]]$permissions$view
@@ -2002,10 +2520,10 @@
 #&gt; 
 #&gt; [[27]]
 #&gt; [[27]]$id
-#&gt; [1] 391541
+#&gt; [1] 391507
 #&gt; 
 #&gt; [[27]]$created_at
-#&gt; [1] "2019-04-02T13:39:13+00:00"
+#&gt; [1] "2019-04-01T14:35:51+00:00"
 #&gt; 
 #&gt; [[27]]$deleted_at
 #&gt; NULL
@@ -2014,14 +2532,14 @@
 #&gt; [1] "available"
 #&gt; 
 #&gt; [[27]]$name
-#&gt; [1] "Tagging Again"
+#&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[27]]$identifier
-#&gt; [1] "2092730d-7b96-4ab0-8a76-012c85bcdebd"
+#&gt; [1] "c710c86e-7135-40ef-a9a1-9cf3f5608564"
 #&gt; 
 #&gt; [[27]]$metadata
 #&gt; [[27]]$metadata$name
-#&gt; [1] "Tagging Again"
+#&gt; [1] "My First Resource"
 #&gt; 
 #&gt; 
 #&gt; [[27]]$author
@@ -2044,11 +2562,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[27]]$thread
-#&gt; [[27]]$thread$comments_count
+#&gt; [[27]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[27]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[27]]$thread$id
-#&gt; [1] 477350
+#&gt; [1] 476965
+#&gt; 
+#&gt; 
+#&gt; [[27]]$review_thread
+#&gt; [[27]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[27]]$review_thread$id
+#&gt; [1] 185771
+#&gt; 
+#&gt; [[27]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[27]]$image
@@ -2059,6 +2591,12 @@
 #&gt; 
 #&gt; [[27]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[27]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[27]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[27]]$permissions
 #&gt; [[27]]$permissions$view
@@ -2074,10 +2612,10 @@
 #&gt; 
 #&gt; [[28]]
 #&gt; [[28]]$id
-#&gt; [1] 391536
+#&gt; [1] 391506
 #&gt; 
 #&gt; [[28]]$created_at
-#&gt; [1] "2019-04-02T10:03:53+00:00"
+#&gt; [1] "2019-04-01T14:35:07+00:00"
 #&gt; 
 #&gt; [[28]]$deleted_at
 #&gt; NULL
@@ -2086,14 +2624,14 @@
 #&gt; [1] "available"
 #&gt; 
 #&gt; [[28]]$name
-#&gt; [1] "test"
+#&gt; [1] "My First Resource"
 #&gt; 
 #&gt; [[28]]$identifier
-#&gt; [1] "12f72be9-56c0-4f47-a03e-0d1b42eab7be"
+#&gt; [1] "4e4138c5-438c-4be3-8b24-18208b9763b4"
 #&gt; 
 #&gt; [[28]]$metadata
 #&gt; [[28]]$metadata$name
-#&gt; [1] "test"
+#&gt; [1] "My First Resource"
 #&gt; 
 #&gt; 
 #&gt; [[28]]$author
@@ -2116,11 +2654,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[28]]$thread
-#&gt; [[28]]$thread$comments_count
+#&gt; [[28]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[28]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[28]]$thread$id
-#&gt; [1] 477284
+#&gt; [1] 476961
+#&gt; 
+#&gt; 
+#&gt; [[28]]$review_thread
+#&gt; [[28]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[28]]$review_thread$id
+#&gt; [1] 185772
+#&gt; 
+#&gt; [[28]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[28]]$image
@@ -2131,6 +2683,12 @@
 #&gt; 
 #&gt; [[28]]$resource_location
 #&gt; NULL
+#&gt; 
+#&gt; [[28]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[28]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
 #&gt; 
 #&gt; [[28]]$permissions
 #&gt; [[28]]$permissions$view
@@ -2146,10 +2704,10 @@
 #&gt; 
 #&gt; [[29]]
 #&gt; [[29]]$id
-#&gt; [1] 391535
+#&gt; [1] 391443
 #&gt; 
 #&gt; [[29]]$created_at
-#&gt; [1] "2019-04-02T10:02:07+00:00"
+#&gt; [1] "2019-03-28T14:29:00+00:00"
 #&gt; 
 #&gt; [[29]]$deleted_at
 #&gt; NULL
@@ -2158,14 +2716,14 @@
 #&gt; [1] "available"
 #&gt; 
 #&gt; [[29]]$name
-#&gt; [1] "test"
+#&gt; [1] "My Resource"
 #&gt; 
 #&gt; [[29]]$identifier
-#&gt; [1] "e14b1908-d600-460f-817b-e7e8a7e6c774"
+#&gt; [1] "fcef1b47-4ff6-4830-9177-9ebb92706129"
 #&gt; 
 #&gt; [[29]]$metadata
 #&gt; [[29]]$metadata$name
-#&gt; [1] "test"
+#&gt; [1] "My Resource"
 #&gt; 
 #&gt; 
 #&gt; [[29]]$author
@@ -2188,11 +2746,25 @@
 #&gt; 
 #&gt; 
 #&gt; [[29]]$thread
-#&gt; [[29]]$thread$comments_count
+#&gt; [[29]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[29]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; [[29]]$thread$id
-#&gt; [1] 477266
+#&gt; [1] 475883
+#&gt; 
+#&gt; 
+#&gt; [[29]]$review_thread
+#&gt; [[29]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[29]]$review_thread$id
+#&gt; [1] 185780
+#&gt; 
+#&gt; [[29]]$review_thread$average_rating
+#&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; [[29]]$image
@@ -2204,6 +2776,12 @@
 #&gt; [[29]]$resource_location
 #&gt; NULL
 #&gt; 
+#&gt; [[29]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[29]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
+#&gt; 
 #&gt; [[29]]$permissions
 #&gt; [[29]]$permissions$view
 #&gt; [1] TRUE
@@ -2212,6 +2790,558 @@
 #&gt; [1] TRUE
 #&gt; 
 #&gt; [[29]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[30]]
+#&gt; [[30]]$id
+#&gt; [1] 391541
+#&gt; 
+#&gt; [[30]]$created_at
+#&gt; [1] "2019-04-02T13:39:13+00:00"
+#&gt; 
+#&gt; [[30]]$deleted_at
+#&gt; NULL
+#&gt; 
+#&gt; [[30]]$status
+#&gt; [1] "available"
+#&gt; 
+#&gt; [[30]]$name
+#&gt; [1] "Tagging Again"
+#&gt; 
+#&gt; [[30]]$identifier
+#&gt; [1] "2092730d-7b96-4ab0-8a76-012c85bcdebd"
+#&gt; 
+#&gt; [[30]]$metadata
+#&gt; [[30]]$metadata$name
+#&gt; [1] "Tagging Again"
+#&gt; 
+#&gt; 
+#&gt; [[30]]$author
+#&gt; [[30]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[30]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; [[30]]$author$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; [[30]]$author$profile
+#&gt; [[30]]$author$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; [[30]]$author$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[30]]$thread
+#&gt; [[30]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[30]]$thread$comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[30]]$thread$id
+#&gt; [1] 477350
+#&gt; 
+#&gt; 
+#&gt; [[30]]$review_thread
+#&gt; [[30]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[30]]$review_thread$id
+#&gt; [1] 274998
+#&gt; 
+#&gt; [[30]]$review_thread$average_rating
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; [[30]]$image
+#&gt; NULL
+#&gt; 
+#&gt; [[30]]$resource_category
+#&gt; NULL
+#&gt; 
+#&gt; [[30]]$resource_location
+#&gt; NULL
+#&gt; 
+#&gt; [[30]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[30]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[30]]$permissions
+#&gt; [[30]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[30]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[30]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[31]]
+#&gt; [[31]]$id
+#&gt; [1] 392818
+#&gt; 
+#&gt; [[31]]$created_at
+#&gt; [1] "2019-06-03T13:46:22+00:00"
+#&gt; 
+#&gt; [[31]]$deleted_at
+#&gt; NULL
+#&gt; 
+#&gt; [[31]]$status
+#&gt; [1] "available"
+#&gt; 
+#&gt; [[31]]$name
+#&gt; [1] "test"
+#&gt; 
+#&gt; [[31]]$identifier
+#&gt; [1] "f912d596-9e97-4af7-af5b-c946fac601b3"
+#&gt; 
+#&gt; [[31]]$metadata
+#&gt; [[31]]$metadata$name
+#&gt; [1] "test"
+#&gt; 
+#&gt; 
+#&gt; [[31]]$author
+#&gt; [[31]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[31]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; [[31]]$author$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; [[31]]$author$profile
+#&gt; [[31]]$author$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; [[31]]$author$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[31]]$thread
+#&gt; [[31]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[31]]$thread$comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[31]]$thread$id
+#&gt; [1] 506699
+#&gt; 
+#&gt; 
+#&gt; [[31]]$review_thread
+#&gt; [[31]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[31]]$review_thread$id
+#&gt; [1] 392392
+#&gt; 
+#&gt; [[31]]$review_thread$average_rating
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; [[31]]$image
+#&gt; NULL
+#&gt; 
+#&gt; [[31]]$resource_category
+#&gt; NULL
+#&gt; 
+#&gt; [[31]]$resource_location
+#&gt; NULL
+#&gt; 
+#&gt; [[31]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[31]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[31]]$permissions
+#&gt; [[31]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[31]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[31]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[32]]
+#&gt; [[32]]$id
+#&gt; [1] 392817
+#&gt; 
+#&gt; [[32]]$created_at
+#&gt; [1] "2019-06-03T13:44:41+00:00"
+#&gt; 
+#&gt; [[32]]$deleted_at
+#&gt; NULL
+#&gt; 
+#&gt; [[32]]$status
+#&gt; [1] "available"
+#&gt; 
+#&gt; [[32]]$name
+#&gt; [1] "test"
+#&gt; 
+#&gt; [[32]]$identifier
+#&gt; [1] "6ffc8251-3595-4931-a256-cf8f3dbf6a78"
+#&gt; 
+#&gt; [[32]]$metadata
+#&gt; [[32]]$metadata$name
+#&gt; [1] "test"
+#&gt; 
+#&gt; 
+#&gt; [[32]]$author
+#&gt; [[32]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[32]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; [[32]]$author$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; [[32]]$author$profile
+#&gt; [[32]]$author$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; [[32]]$author$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[32]]$thread
+#&gt; [[32]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[32]]$thread$comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[32]]$thread$id
+#&gt; [1] 506695
+#&gt; 
+#&gt; 
+#&gt; [[32]]$review_thread
+#&gt; [[32]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[32]]$review_thread$id
+#&gt; [1] 392391
+#&gt; 
+#&gt; [[32]]$review_thread$average_rating
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; [[32]]$image
+#&gt; NULL
+#&gt; 
+#&gt; [[32]]$resource_category
+#&gt; NULL
+#&gt; 
+#&gt; [[32]]$resource_location
+#&gt; NULL
+#&gt; 
+#&gt; [[32]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[32]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[32]]$permissions
+#&gt; [[32]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[32]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[32]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[33]]
+#&gt; [[33]]$id
+#&gt; [1] 392816
+#&gt; 
+#&gt; [[33]]$created_at
+#&gt; [1] "2019-06-03T13:41:07+00:00"
+#&gt; 
+#&gt; [[33]]$deleted_at
+#&gt; NULL
+#&gt; 
+#&gt; [[33]]$status
+#&gt; [1] "available"
+#&gt; 
+#&gt; [[33]]$name
+#&gt; [1] "test"
+#&gt; 
+#&gt; [[33]]$identifier
+#&gt; [1] "76409fa7-0738-4a1b-bc87-3387dd5d77ba"
+#&gt; 
+#&gt; [[33]]$metadata
+#&gt; [[33]]$metadata$name
+#&gt; [1] "test"
+#&gt; 
+#&gt; 
+#&gt; [[33]]$author
+#&gt; [[33]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[33]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; [[33]]$author$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; [[33]]$author$profile
+#&gt; [[33]]$author$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; [[33]]$author$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[33]]$thread
+#&gt; [[33]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[33]]$thread$comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[33]]$thread$id
+#&gt; [1] 506671
+#&gt; 
+#&gt; 
+#&gt; [[33]]$review_thread
+#&gt; [[33]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[33]]$review_thread$id
+#&gt; [1] 392390
+#&gt; 
+#&gt; [[33]]$review_thread$average_rating
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; [[33]]$image
+#&gt; NULL
+#&gt; 
+#&gt; [[33]]$resource_category
+#&gt; NULL
+#&gt; 
+#&gt; [[33]]$resource_location
+#&gt; NULL
+#&gt; 
+#&gt; [[33]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[33]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[33]]$permissions
+#&gt; [[33]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[33]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[33]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[34]]
+#&gt; [[34]]$id
+#&gt; [1] 391536
+#&gt; 
+#&gt; [[34]]$created_at
+#&gt; [1] "2019-04-02T10:03:53+00:00"
+#&gt; 
+#&gt; [[34]]$deleted_at
+#&gt; NULL
+#&gt; 
+#&gt; [[34]]$status
+#&gt; [1] "available"
+#&gt; 
+#&gt; [[34]]$name
+#&gt; [1] "test"
+#&gt; 
+#&gt; [[34]]$identifier
+#&gt; [1] "12f72be9-56c0-4f47-a03e-0d1b42eab7be"
+#&gt; 
+#&gt; [[34]]$metadata
+#&gt; [[34]]$metadata$name
+#&gt; [1] "test"
+#&gt; 
+#&gt; 
+#&gt; [[34]]$author
+#&gt; [[34]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[34]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; [[34]]$author$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; [[34]]$author$profile
+#&gt; [[34]]$author$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; [[34]]$author$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[34]]$thread
+#&gt; [[34]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[34]]$thread$comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[34]]$thread$id
+#&gt; [1] 477284
+#&gt; 
+#&gt; 
+#&gt; [[34]]$review_thread
+#&gt; [[34]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[34]]$review_thread$id
+#&gt; [1] 278473
+#&gt; 
+#&gt; [[34]]$review_thread$average_rating
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; [[34]]$image
+#&gt; NULL
+#&gt; 
+#&gt; [[34]]$resource_category
+#&gt; NULL
+#&gt; 
+#&gt; [[34]]$resource_location
+#&gt; NULL
+#&gt; 
+#&gt; [[34]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[34]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[34]]$permissions
+#&gt; [[34]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[34]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[34]]$permissions$owner
+#&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[35]]
+#&gt; [[35]]$id
+#&gt; [1] 391535
+#&gt; 
+#&gt; [[35]]$created_at
+#&gt; [1] "2019-04-02T10:02:07+00:00"
+#&gt; 
+#&gt; [[35]]$deleted_at
+#&gt; NULL
+#&gt; 
+#&gt; [[35]]$status
+#&gt; [1] "available"
+#&gt; 
+#&gt; [[35]]$name
+#&gt; [1] "test"
+#&gt; 
+#&gt; [[35]]$identifier
+#&gt; [1] "e14b1908-d600-460f-817b-e7e8a7e6c774"
+#&gt; 
+#&gt; [[35]]$metadata
+#&gt; [[35]]$metadata$name
+#&gt; [1] "test"
+#&gt; 
+#&gt; 
+#&gt; [[35]]$author
+#&gt; [[35]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; [[35]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; [[35]]$author$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; [[35]]$author$profile
+#&gt; [[35]]$author$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; [[35]]$author$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; [[35]]$thread
+#&gt; [[35]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[35]]$thread$comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[35]]$thread$id
+#&gt; [1] 477266
+#&gt; 
+#&gt; 
+#&gt; [[35]]$review_thread
+#&gt; [[35]]$review_thread$reviews_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[35]]$review_thread$id
+#&gt; [1] 278474
+#&gt; 
+#&gt; [[35]]$review_thread$average_rating
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; [[35]]$image
+#&gt; NULL
+#&gt; 
+#&gt; [[35]]$resource_category
+#&gt; NULL
+#&gt; 
+#&gt; [[35]]$resource_location
+#&gt; NULL
+#&gt; 
+#&gt; [[35]]$logged_user_resource_list_count
+#&gt; [1] 1
+#&gt; 
+#&gt; [[35]]$logged_user_resource_wishlist_count
+#&gt; [1] 0
+#&gt; 
+#&gt; [[35]]$permissions
+#&gt; [[35]]$permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[35]]$permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; [[35]]$permissions$owner
 #&gt; [1] TRUE
 #&gt; 
 #&gt; 

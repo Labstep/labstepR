@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">labstepR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2</span>
       </span>
     </div>
 
@@ -128,290 +128,345 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>user</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='login.html'>login</a></span>(<span class='st'>"demo@labstep.com"</span>,<span class='st'>"demopassword"</span>)
 <span class='no'>protocol</span> <span class='kw'>&lt;-</span> <span class='fu'>createProtocol</span>(<span class='no'>user</span>,<span class='st'>'My First Protocol'</span>)
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>protocol</span>)</div><div class='output co'>#&gt; $all_experiment_count
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>protocol</span>)</div><div class='output co'>#&gt; $last_version
+#&gt; $last_version$all_experiment_count
 #&gt; [1] 0
 #&gt; 
-#&gt; $experiment_count
+#&gt; $last_version$name
+#&gt; [1] "My First Protocol"
+#&gt; 
+#&gt; $last_version$experiment_count
 #&gt; [1] 0
 #&gt; 
-#&gt; $protocol_step_count
+#&gt; $last_version$protocol_step_count
 #&gt; [1] 1
 #&gt; 
-#&gt; $file_count
+#&gt; $last_version$protocol_table_count
 #&gt; [1] 0
 #&gt; 
-#&gt; $protocol_table_count
+#&gt; $last_version$protocol_timer_count
 #&gt; [1] 0
 #&gt; 
-#&gt; $protocol_timer_count
+#&gt; $last_version$protocol_value_count
 #&gt; [1] 0
 #&gt; 
-#&gt; $protocol_value_count
+#&gt; $last_version$children_protocol_collection_count
 #&gt; [1] 0
 #&gt; 
-#&gt; $children_protocol_collection_count
+#&gt; $last_version$version
 #&gt; [1] 0
 #&gt; 
-#&gt; $version
-#&gt; [1] 0
-#&gt; 
-#&gt; $is_last_version
+#&gt; $last_version$is_last_version
 #&gt; [1] TRUE
 #&gt; 
+#&gt; $last_version$id
+#&gt; [1] 8984
+#&gt; 
+#&gt; $last_version$changes
+#&gt; NULL
+#&gt; 
+#&gt; $last_version$additional_information
+#&gt; NULL
+#&gt; 
+#&gt; $last_version$content_state
+#&gt; $last_version$content_state$object
+#&gt; [1] "value"
+#&gt; 
+#&gt; $last_version$content_state$document
+#&gt; $last_version$content_state$document$data
+#&gt; list()
+#&gt; 
+#&gt; $last_version$content_state$document$nodes
+#&gt; $last_version$content_state$document$nodes[[1]]
+#&gt; $last_version$content_state$document$nodes[[1]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[1]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[1]]$type
+#&gt; [1] "heading"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[1]]$data
+#&gt; list()
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[1]]$nodes
+#&gt; $last_version$content_state$document$nodes[[1]]$nodes[[1]]
+#&gt; $last_version$content_state$document$nodes[[1]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[1]]$nodes[[1]]$leaves
+#&gt; $last_version$content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]
+#&gt; $last_version$content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "Introduction"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]$marks
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[2]]
+#&gt; $last_version$content_state$document$nodes[[2]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[2]]$type
+#&gt; [1] "paragraph"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[2]]$data
+#&gt; list()
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[2]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[2]]$nodes
+#&gt; $last_version$content_state$document$nodes[[2]]$nodes[[1]]
+#&gt; $last_version$content_state$document$nodes[[2]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[2]]$nodes[[1]]$leaves
+#&gt; $last_version$content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]
+#&gt; $last_version$content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "Get started by giving your protocol a name and by adding an introduction..."
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]$marks
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[3]]
+#&gt; $last_version$content_state$document$nodes[[3]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[3]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[3]]$type
+#&gt; [1] "heading"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[3]]$data
+#&gt; list()
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[3]]$nodes
+#&gt; $last_version$content_state$document$nodes[[3]]$nodes[[1]]
+#&gt; $last_version$content_state$document$nodes[[3]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[3]]$nodes[[1]]$leaves
+#&gt; $last_version$content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]
+#&gt; $last_version$content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "Materials"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]$marks
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[4]]
+#&gt; $last_version$content_state$document$nodes[[4]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[4]]$type
+#&gt; [1] "paragraph"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[4]]$data
+#&gt; list()
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[4]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[4]]$nodes
+#&gt; $last_version$content_state$document$nodes[[4]]$nodes[[1]]
+#&gt; $last_version$content_state$document$nodes[[4]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[4]]$nodes[[1]]$leaves
+#&gt; $last_version$content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]
+#&gt; $last_version$content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "You can add the resources (select the resource icon) you use in your protocol here or in the procedure."
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]$marks
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[5]]
+#&gt; $last_version$content_state$document$nodes[[5]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[5]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[5]]$type
+#&gt; [1] "heading"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[5]]$data
+#&gt; list()
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[5]]$nodes
+#&gt; $last_version$content_state$document$nodes[[5]]$nodes[[1]]
+#&gt; $last_version$content_state$document$nodes[[5]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[5]]$nodes[[1]]$leaves
+#&gt; $last_version$content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]
+#&gt; $last_version$content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "Procedure"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]$marks
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]
+#&gt; $last_version$content_state$document$nodes[[6]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$type
+#&gt; [1] "protocol_step"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$data
+#&gt; $last_version$content_state$document$nodes[[6]]$data$id
+#&gt; [1] 37977
+#&gt; 
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$type
+#&gt; [1] "paragraph"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$data
+#&gt; list()
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$nodes
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "Detail your protocol procedure in steps like this. To add another step, click below 'Step 1' and select the plus icon on the left hand side."
+#&gt; 
+#&gt; $last_version$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]$marks
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $last_version$content_state$document$object
+#&gt; [1] "document"
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $last_version$author
+#&gt; $last_version$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; $last_version$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; $last_version$author$profile
+#&gt; $last_version$author$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; $last_version$author$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $last_version$protocol_steps
+#&gt; $last_version$protocol_steps[[1]]
+#&gt; $last_version$protocol_steps[[1]]$id
+#&gt; [1] 37977
+#&gt; 
+#&gt; $last_version$protocol_steps[[1]]$files
+#&gt; list()
+#&gt; 
+#&gt; $last_version$protocol_steps[[1]]$protocol_tables
+#&gt; list()
+#&gt; 
+#&gt; $last_version$protocol_steps[[1]]$protocol_timers
+#&gt; list()
+#&gt; 
+#&gt; $last_version$protocol_steps[[1]]$protocol_values
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $last_version$protocol_tables
+#&gt; list()
+#&gt; 
+#&gt; $last_version$protocol_timers
+#&gt; list()
+#&gt; 
+#&gt; $last_version$protocol_values
+#&gt; list()
+#&gt; 
+#&gt; $last_version$files
+#&gt; list()
+#&gt; 
+#&gt; 
 #&gt; $id
-#&gt; [1] 7520
+#&gt; [1] 7350
 #&gt; 
 #&gt; $created_at
-#&gt; [1] "2019-04-02T16:27:23+00:00"
+#&gt; [1] "2019-06-03T14:43:24+00:00"
 #&gt; 
 #&gt; $updated_at
-#&gt; [1] "2019-04-02T16:27:23+00:00"
+#&gt; [1] "2019-06-03T14:43:24+00:00"
 #&gt; 
 #&gt; $name
 #&gt; [1] "My First Protocol"
 #&gt; 
-#&gt; $changes
+#&gt; $deleted_at
 #&gt; NULL
-#&gt; 
-#&gt; $additional_information
-#&gt; NULL
-#&gt; 
-#&gt; $content_state
-#&gt; $content_state$object
-#&gt; [1] "value"
-#&gt; 
-#&gt; $content_state$document
-#&gt; $content_state$document$data
-#&gt; list()
-#&gt; 
-#&gt; $content_state$document$nodes
-#&gt; $content_state$document$nodes[[1]]
-#&gt; $content_state$document$nodes[[1]]$object
-#&gt; [1] "block"
-#&gt; 
-#&gt; $content_state$document$nodes[[1]]$isVoid
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $content_state$document$nodes[[1]]$type
-#&gt; [1] "heading"
-#&gt; 
-#&gt; $content_state$document$nodes[[1]]$data
-#&gt; list()
-#&gt; 
-#&gt; $content_state$document$nodes[[1]]$nodes
-#&gt; $content_state$document$nodes[[1]]$nodes[[1]]
-#&gt; $content_state$document$nodes[[1]]$nodes[[1]]$object
-#&gt; [1] "text"
-#&gt; 
-#&gt; $content_state$document$nodes[[1]]$nodes[[1]]$leaves
-#&gt; $content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]
-#&gt; $content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]$object
-#&gt; [1] "leaf"
-#&gt; 
-#&gt; $content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]$text
-#&gt; [1] "Introduction"
-#&gt; 
-#&gt; $content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]$marks
-#&gt; list()
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; $content_state$document$nodes[[2]]
-#&gt; $content_state$document$nodes[[2]]$object
-#&gt; [1] "block"
-#&gt; 
-#&gt; $content_state$document$nodes[[2]]$type
-#&gt; [1] "paragraph"
-#&gt; 
-#&gt; $content_state$document$nodes[[2]]$data
-#&gt; list()
-#&gt; 
-#&gt; $content_state$document$nodes[[2]]$isVoid
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $content_state$document$nodes[[2]]$nodes
-#&gt; $content_state$document$nodes[[2]]$nodes[[1]]
-#&gt; $content_state$document$nodes[[2]]$nodes[[1]]$object
-#&gt; [1] "text"
-#&gt; 
-#&gt; $content_state$document$nodes[[2]]$nodes[[1]]$leaves
-#&gt; $content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]
-#&gt; $content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]$object
-#&gt; [1] "leaf"
-#&gt; 
-#&gt; $content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]$text
-#&gt; [1] "Get started by giving your protocol a name and by adding an introduction..."
-#&gt; 
-#&gt; $content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]$marks
-#&gt; list()
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; $content_state$document$nodes[[3]]
-#&gt; $content_state$document$nodes[[3]]$object
-#&gt; [1] "block"
-#&gt; 
-#&gt; $content_state$document$nodes[[3]]$isVoid
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $content_state$document$nodes[[3]]$type
-#&gt; [1] "heading"
-#&gt; 
-#&gt; $content_state$document$nodes[[3]]$data
-#&gt; list()
-#&gt; 
-#&gt; $content_state$document$nodes[[3]]$nodes
-#&gt; $content_state$document$nodes[[3]]$nodes[[1]]
-#&gt; $content_state$document$nodes[[3]]$nodes[[1]]$object
-#&gt; [1] "text"
-#&gt; 
-#&gt; $content_state$document$nodes[[3]]$nodes[[1]]$leaves
-#&gt; $content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]
-#&gt; $content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]$object
-#&gt; [1] "leaf"
-#&gt; 
-#&gt; $content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]$text
-#&gt; [1] "Materials"
-#&gt; 
-#&gt; $content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]$marks
-#&gt; list()
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; $content_state$document$nodes[[4]]
-#&gt; $content_state$document$nodes[[4]]$object
-#&gt; [1] "block"
-#&gt; 
-#&gt; $content_state$document$nodes[[4]]$type
-#&gt; [1] "paragraph"
-#&gt; 
-#&gt; $content_state$document$nodes[[4]]$data
-#&gt; list()
-#&gt; 
-#&gt; $content_state$document$nodes[[4]]$isVoid
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $content_state$document$nodes[[4]]$nodes
-#&gt; $content_state$document$nodes[[4]]$nodes[[1]]
-#&gt; $content_state$document$nodes[[4]]$nodes[[1]]$object
-#&gt; [1] "text"
-#&gt; 
-#&gt; $content_state$document$nodes[[4]]$nodes[[1]]$leaves
-#&gt; $content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]
-#&gt; $content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]$object
-#&gt; [1] "leaf"
-#&gt; 
-#&gt; $content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]$text
-#&gt; [1] "You can add the resources (select the resource icon) you use in your protocol here or in the procedure."
-#&gt; 
-#&gt; $content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]$marks
-#&gt; list()
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; $content_state$document$nodes[[5]]
-#&gt; $content_state$document$nodes[[5]]$object
-#&gt; [1] "block"
-#&gt; 
-#&gt; $content_state$document$nodes[[5]]$isVoid
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $content_state$document$nodes[[5]]$type
-#&gt; [1] "heading"
-#&gt; 
-#&gt; $content_state$document$nodes[[5]]$data
-#&gt; list()
-#&gt; 
-#&gt; $content_state$document$nodes[[5]]$nodes
-#&gt; $content_state$document$nodes[[5]]$nodes[[1]]
-#&gt; $content_state$document$nodes[[5]]$nodes[[1]]$object
-#&gt; [1] "text"
-#&gt; 
-#&gt; $content_state$document$nodes[[5]]$nodes[[1]]$leaves
-#&gt; $content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]
-#&gt; $content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]$object
-#&gt; [1] "leaf"
-#&gt; 
-#&gt; $content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]$text
-#&gt; [1] "Procedure"
-#&gt; 
-#&gt; $content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]$marks
-#&gt; list()
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]
-#&gt; $content_state$document$nodes[[6]]$object
-#&gt; [1] "block"
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$type
-#&gt; [1] "protocol_step"
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$isVoid
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$data
-#&gt; $content_state$document$nodes[[6]]$data$id
-#&gt; [1] 30294
-#&gt; 
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$nodes
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$object
-#&gt; [1] "block"
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$type
-#&gt; [1] "paragraph"
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$data
-#&gt; list()
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$isVoid
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$nodes
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$object
-#&gt; [1] "text"
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]$object
-#&gt; [1] "leaf"
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]$text
-#&gt; [1] "Detail your protocol procedure in steps like this. To add another step, click below 'Step 1' and select the plus icon on the left hand side."
-#&gt; 
-#&gt; $content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]$marks
-#&gt; list()
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; $content_state$document$object
-#&gt; [1] "document"
-#&gt; 
-#&gt; 
 #&gt; 
 #&gt; $author
 #&gt; $author$id
@@ -420,256 +475,375 @@
 #&gt; $author$username
 #&gt; [1] "demo@labstep.com"
 #&gt; 
-#&gt; $author$roles
-#&gt; $author$roles[[1]]
-#&gt; [1] "ROLE_USER"
+#&gt; $author$profile
+#&gt; $author$profile$id
+#&gt; [1] 5751
 #&gt; 
-#&gt; $author$roles[[2]]
-#&gt; [1] "ROLE_GROUP_1182"
-#&gt; 
-#&gt; $author$roles[[3]]
-#&gt; [1] "ROLE_GROUP_OWNER_1182"
-#&gt; 
-#&gt; $author$roles[[4]]
-#&gt; [1] "ROLE_GROUP_1183"
-#&gt; 
-#&gt; $author$roles[[5]]
-#&gt; [1] "ROLE_GROUP_OWNER_1183"
-#&gt; 
-#&gt; $author$roles[[6]]
-#&gt; [1] "ROLE_GROUP_1184"
-#&gt; 
-#&gt; $author$roles[[7]]
-#&gt; [1] "ROLE_GROUP_OWNER_1184"
-#&gt; 
-#&gt; $author$roles[[8]]
-#&gt; [1] "ROLE_GROUP_1185"
-#&gt; 
-#&gt; $author$roles[[9]]
-#&gt; [1] "ROLE_GROUP_OWNER_1185"
-#&gt; 
-#&gt; $author$roles[[10]]
-#&gt; [1] "ROLE_GROUP_1186"
-#&gt; 
-#&gt; $author$roles[[11]]
-#&gt; [1] "ROLE_GROUP_OWNER_1186"
-#&gt; 
-#&gt; $author$roles[[12]]
-#&gt; [1] "ROLE_GROUP_1187"
-#&gt; 
-#&gt; $author$roles[[13]]
-#&gt; [1] "ROLE_GROUP_OWNER_1187"
-#&gt; 
-#&gt; $author$roles[[14]]
-#&gt; [1] "ROLE_GROUP_1188"
-#&gt; 
-#&gt; $author$roles[[15]]
-#&gt; [1] "ROLE_GROUP_OWNER_1188"
-#&gt; 
-#&gt; $author$roles[[16]]
-#&gt; [1] "ROLE_GROUP_1189"
-#&gt; 
-#&gt; $author$roles[[17]]
-#&gt; [1] "ROLE_GROUP_OWNER_1189"
-#&gt; 
-#&gt; $author$roles[[18]]
-#&gt; [1] "ROLE_GROUP_1190"
-#&gt; 
-#&gt; $author$roles[[19]]
-#&gt; [1] "ROLE_GROUP_OWNER_1190"
-#&gt; 
-#&gt; $author$roles[[20]]
-#&gt; [1] "ROLE_GROUP_1191"
-#&gt; 
-#&gt; $author$roles[[21]]
-#&gt; [1] "ROLE_GROUP_OWNER_1191"
-#&gt; 
-#&gt; $author$roles[[22]]
-#&gt; [1] "ROLE_GROUP_1192"
-#&gt; 
-#&gt; $author$roles[[23]]
-#&gt; [1] "ROLE_GROUP_OWNER_1192"
-#&gt; 
-#&gt; $author$roles[[24]]
-#&gt; [1] "ROLE_GROUP_1193"
-#&gt; 
-#&gt; $author$roles[[25]]
-#&gt; [1] "ROLE_GROUP_OWNER_1193"
-#&gt; 
-#&gt; $author$roles[[26]]
-#&gt; [1] "ROLE_GROUP_1198"
-#&gt; 
-#&gt; $author$roles[[27]]
-#&gt; [1] "ROLE_GROUP_OWNER_1198"
-#&gt; 
-#&gt; $author$roles[[28]]
-#&gt; [1] "ROLE_GROUP_1200"
-#&gt; 
-#&gt; $author$roles[[29]]
-#&gt; [1] "ROLE_GROUP_OWNER_1200"
-#&gt; 
-#&gt; $author$roles[[30]]
-#&gt; [1] "ROLE_GROUP_1201"
-#&gt; 
-#&gt; $author$roles[[31]]
-#&gt; [1] "ROLE_GROUP_OWNER_1201"
-#&gt; 
-#&gt; $author$roles[[32]]
-#&gt; [1] "ROLE_GROUP_1202"
-#&gt; 
-#&gt; $author$roles[[33]]
-#&gt; [1] "ROLE_GROUP_OWNER_1202"
-#&gt; 
-#&gt; $author$roles[[34]]
-#&gt; [1] "ROLE_GROUP_1203"
-#&gt; 
-#&gt; $author$roles[[35]]
-#&gt; [1] "ROLE_GROUP_OWNER_1203"
-#&gt; 
-#&gt; $author$roles[[36]]
-#&gt; [1] "ROLE_GROUP_1204"
-#&gt; 
-#&gt; $author$roles[[37]]
-#&gt; [1] "ROLE_GROUP_OWNER_1204"
-#&gt; 
-#&gt; $author$roles[[38]]
-#&gt; [1] "ROLE_GROUP_1205"
-#&gt; 
-#&gt; $author$roles[[39]]
-#&gt; [1] "ROLE_GROUP_OWNER_1205"
-#&gt; 
-#&gt; $author$roles[[40]]
-#&gt; [1] "ROLE_GROUP_1206"
-#&gt; 
-#&gt; $author$roles[[41]]
-#&gt; [1] "ROLE_GROUP_OWNER_1206"
-#&gt; 
-#&gt; $author$roles[[42]]
-#&gt; [1] "ROLE_GROUP_1207"
-#&gt; 
-#&gt; $author$roles[[43]]
-#&gt; [1] "ROLE_GROUP_OWNER_1207"
-#&gt; 
-#&gt; $author$roles[[44]]
-#&gt; [1] "ROLE_GROUP_1208"
-#&gt; 
-#&gt; $author$roles[[45]]
-#&gt; [1] "ROLE_GROUP_OWNER_1208"
-#&gt; 
-#&gt; $author$roles[[46]]
-#&gt; [1] "ROLE_GROUP_1213"
-#&gt; 
-#&gt; $author$roles[[47]]
-#&gt; [1] "ROLE_GROUP_OWNER_1213"
-#&gt; 
-#&gt; $author$roles[[48]]
-#&gt; [1] "ROLE_GROUP_1214"
-#&gt; 
-#&gt; $author$roles[[49]]
-#&gt; [1] "ROLE_GROUP_OWNER_1214"
-#&gt; 
-#&gt; $author$roles[[50]]
-#&gt; [1] "ROLE_GROUP_1220"
-#&gt; 
-#&gt; $author$roles[[51]]
-#&gt; [1] "ROLE_GROUP_OWNER_1220"
-#&gt; 
-#&gt; $author$roles[[52]]
-#&gt; [1] "ROLE_GROUP_1221"
-#&gt; 
-#&gt; $author$roles[[53]]
-#&gt; [1] "ROLE_GROUP_OWNER_1221"
-#&gt; 
-#&gt; $author$roles[[54]]
-#&gt; [1] "ROLE_GROUP_1222"
-#&gt; 
-#&gt; $author$roles[[55]]
-#&gt; [1] "ROLE_GROUP_OWNER_1222"
-#&gt; 
-#&gt; 
-#&gt; $author$name
-#&gt; [1] "Demo Labstep"
-#&gt; 
-#&gt; $author$first_name
-#&gt; [1] "Demo"
-#&gt; 
-#&gt; $author$last_name
-#&gt; [1] "Labstep"
-#&gt; 
-#&gt; 
-#&gt; $collection
-#&gt; $collection$id
-#&gt; [1] 6177
-#&gt; 
-#&gt; $collection$created_at
-#&gt; [1] "2019-04-02T16:27:23+00:00"
-#&gt; 
-#&gt; $collection$updated_at
-#&gt; [1] "2019-04-02T16:27:23+00:00"
-#&gt; 
-#&gt; $collection$deleted_at
+#&gt; $author$profile$photo
 #&gt; NULL
 #&gt; 
-#&gt; $collection$parent_protocol
-#&gt; NULL
-#&gt; 
-#&gt; $collection$logged_user_protocol_collection_playlist_count
-#&gt; [1] 1
-#&gt; 
-#&gt; $collection$tags
-#&gt; list()
-#&gt; 
-#&gt; $collection$permissions
-#&gt; $collection$permissions$view
-#&gt; [1] TRUE
-#&gt; 
-#&gt; $collection$permissions$edit
-#&gt; [1] TRUE
-#&gt; 
-#&gt; $collection$permissions$owner
-#&gt; [1] TRUE
 #&gt; 
 #&gt; 
-#&gt; 
-#&gt; $protocol_collection_draft
-#&gt; NULL
-#&gt; 
-#&gt; $logged_user_experiment_count
+#&gt; $thread
+#&gt; $thread$all_comment_count
 #&gt; [1] 0
 #&gt; 
-#&gt; $children_protocol_collections
+#&gt; $thread$comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $thread$id
+#&gt; [1] 506763
+#&gt; 
+#&gt; 
+#&gt; $draft
+#&gt; NULL
+#&gt; 
+#&gt; $share_link
+#&gt; NULL
+#&gt; 
+#&gt; $parent_protocol
+#&gt; NULL
+#&gt; 
+#&gt; $versions
+#&gt; $versions[[1]]
+#&gt; $versions[[1]]$all_experiment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $versions[[1]]$name
+#&gt; [1] "My First Protocol"
+#&gt; 
+#&gt; $versions[[1]]$experiment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $versions[[1]]$protocol_step_count
+#&gt; [1] 1
+#&gt; 
+#&gt; $versions[[1]]$protocol_table_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $versions[[1]]$protocol_timer_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $versions[[1]]$protocol_value_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $versions[[1]]$children_protocol_collection_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $versions[[1]]$version
+#&gt; [1] 0
+#&gt; 
+#&gt; $versions[[1]]$is_last_version
+#&gt; [1] TRUE
+#&gt; 
+#&gt; $versions[[1]]$id
+#&gt; [1] 8984
+#&gt; 
+#&gt; $versions[[1]]$changes
+#&gt; NULL
+#&gt; 
+#&gt; $versions[[1]]$additional_information
+#&gt; NULL
+#&gt; 
+#&gt; $versions[[1]]$content_state
+#&gt; $versions[[1]]$content_state$object
+#&gt; [1] "value"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document
+#&gt; $versions[[1]]$content_state$document$data
 #&gt; list()
 #&gt; 
-#&gt; $protocol_steps
-#&gt; $protocol_steps[[1]]
-#&gt; $protocol_steps[[1]]$id
-#&gt; [1] 30294
+#&gt; $versions[[1]]$content_state$document$nodes
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$object
+#&gt; [1] "block"
 #&gt; 
-#&gt; $protocol_steps[[1]]$files
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$type
+#&gt; [1] "heading"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$data
 #&gt; list()
 #&gt; 
-#&gt; $protocol_steps[[1]]$protocol_tables
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$nodes
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$nodes[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$nodes[[1]]$leaves
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "Introduction"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[1]]$nodes[[1]]$leaves[[1]]$marks
 #&gt; list()
 #&gt; 
-#&gt; $protocol_steps[[1]]$protocol_timers
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$type
+#&gt; [1] "paragraph"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$data
 #&gt; list()
 #&gt; 
-#&gt; $protocol_steps[[1]]$protocol_values
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$nodes
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$nodes[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$nodes[[1]]$leaves
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "Get started by giving your protocol a name and by adding an introduction..."
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[2]]$nodes[[1]]$leaves[[1]]$marks
 #&gt; list()
 #&gt; 
 #&gt; 
 #&gt; 
-#&gt; $protocol_tables
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$type
+#&gt; [1] "heading"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$data
 #&gt; list()
 #&gt; 
-#&gt; $protocol_timers
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$nodes
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$nodes[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$nodes[[1]]$leaves
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "Materials"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[3]]$nodes[[1]]$leaves[[1]]$marks
 #&gt; list()
 #&gt; 
-#&gt; $protocol_values
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$type
+#&gt; [1] "paragraph"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$data
 #&gt; list()
 #&gt; 
-#&gt; $files
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$nodes
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$nodes[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$nodes[[1]]$leaves
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "You can add the resources (select the resource icon) you use in your protocol here or in the procedure."
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[4]]$nodes[[1]]$leaves[[1]]$marks
 #&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$type
+#&gt; [1] "heading"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$data
+#&gt; list()
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$nodes
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$nodes[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$nodes[[1]]$leaves
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "Procedure"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[5]]$nodes[[1]]$leaves[[1]]$marks
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$type
+#&gt; [1] "protocol_step"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$data
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$data$id
+#&gt; [1] 37977
+#&gt; 
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$object
+#&gt; [1] "block"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$type
+#&gt; [1] "paragraph"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$data
+#&gt; list()
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$isVoid
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$nodes
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$object
+#&gt; [1] "text"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]$object
+#&gt; [1] "leaf"
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]$text
+#&gt; [1] "Detail your protocol procedure in steps like this. To add another step, click below 'Step 1' and select the plus icon on the left hand side."
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$nodes[[6]]$nodes[[1]]$nodes[[1]]$leaves[[1]]$marks
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $versions[[1]]$content_state$document$object
+#&gt; [1] "document"
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $versions[[1]]$author
+#&gt; $versions[[1]]$author$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; $versions[[1]]$author$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; $versions[[1]]$author$profile
+#&gt; $versions[[1]]$author$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; $versions[[1]]$author$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $versions[[1]]$protocol_steps
+#&gt; $versions[[1]]$protocol_steps[[1]]
+#&gt; $versions[[1]]$protocol_steps[[1]]$id
+#&gt; [1] 37977
+#&gt; 
+#&gt; $versions[[1]]$protocol_steps[[1]]$files
+#&gt; list()
+#&gt; 
+#&gt; $versions[[1]]$protocol_steps[[1]]$protocol_tables
+#&gt; list()
+#&gt; 
+#&gt; $versions[[1]]$protocol_steps[[1]]$protocol_timers
+#&gt; list()
+#&gt; 
+#&gt; $versions[[1]]$protocol_steps[[1]]$protocol_values
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $versions[[1]]$protocol_tables
+#&gt; list()
+#&gt; 
+#&gt; $versions[[1]]$protocol_timers
+#&gt; list()
+#&gt; 
+#&gt; $versions[[1]]$protocol_values
+#&gt; list()
+#&gt; 
+#&gt; $versions[[1]]$files
+#&gt; list()
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $logged_user_protocol_collection_playlist_count
+#&gt; [1] 1
+#&gt; 
+#&gt; $permissions
+#&gt; $permissions$view
+#&gt; [1] TRUE
+#&gt; 
+#&gt; $permissions$edit
+#&gt; [1] TRUE
+#&gt; 
+#&gt; $permissions$owner
+#&gt; [1] TRUE
+#&gt; 
 #&gt; </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">

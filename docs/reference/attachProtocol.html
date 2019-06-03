@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">labstepR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2</span>
       </span>
     </div>
 
@@ -137,19 +137,19 @@
 <span class='no'>protocol</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='createProtocol.html'>createProtocol</a></span>(<span class='no'>user</span>,<span class='st'>'My First Protocol'</span>)
 <span class='no'>experiment</span> <span class='kw'>&lt;-</span> <span class='fu'>attachProtocol</span>(<span class='no'>user</span>,<span class='no'>experiment</span>,<span class='no'>protocol</span>)
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>experiment</span>)</div><div class='output co'>#&gt; $id
-#&gt; [1] 14765
+#&gt; [1] 17111
 #&gt; 
 #&gt; $created_at
-#&gt; [1] "2019-04-02T16:27:15+00:00"
+#&gt; [1] "2019-06-03T14:43:19+00:00"
 #&gt; 
 #&gt; $updated_at
-#&gt; [1] "2019-04-02T16:27:15+00:00"
+#&gt; [1] "2019-06-03T14:43:19+00:00"
 #&gt; 
 #&gt; $deleted_at
 #&gt; NULL
 #&gt; 
 #&gt; $started_at
-#&gt; [1] "2019-04-02T16:27:15+00:00"
+#&gt; [1] "2019-06-03T14:43:19+00:00"
 #&gt; 
 #&gt; $ended_at
 #&gt; NULL
@@ -186,26 +186,29 @@
 #&gt; 
 #&gt; 
 #&gt; $thread
-#&gt; $thread$comments_count
+#&gt; $thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; $thread$id
-#&gt; [1] 477405
+#&gt; [1] 506759
 #&gt; 
 #&gt; 
 #&gt; $experiments
 #&gt; $experiments[[1]]
 #&gt; $experiments[[1]]$id
-#&gt; [1] 14332
+#&gt; [1] 16031
 #&gt; 
 #&gt; $experiments[[1]]$created_at
-#&gt; [1] "2019-04-02T16:27:16+00:00"
+#&gt; [1] "2019-06-03T14:43:20+00:00"
 #&gt; 
 #&gt; $experiments[[1]]$deleted_at
 #&gt; NULL
 #&gt; 
 #&gt; $experiments[[1]]$started_at
-#&gt; [1] "2019-04-02T16:27:16+00:00"
+#&gt; [1] "2019-06-03T14:43:20+00:00"
 #&gt; 
 #&gt; $experiments[[1]]$ended_at
 #&gt; NULL
@@ -218,34 +221,37 @@
 #&gt; [1] 0
 #&gt; 
 #&gt; $experiments[[1]]$protocol$id
-#&gt; [1] 7519
+#&gt; [1] 8983
 #&gt; 
 #&gt; $experiments[[1]]$protocol$created_at
-#&gt; [1] "2019-04-02T16:27:15+00:00"
-#&gt; 
-#&gt; $experiments[[1]]$protocol$name
-#&gt; [1] "My First Protocol"
+#&gt; [1] "2019-06-03T14:43:19+00:00"
 #&gt; 
 #&gt; $experiments[[1]]$protocol$collection
 #&gt; $experiments[[1]]$protocol$collection$id
-#&gt; [1] 6176
+#&gt; [1] 7349
+#&gt; 
+#&gt; $experiments[[1]]$protocol$collection$name
+#&gt; [1] "My First Protocol"
 #&gt; 
 #&gt; 
 #&gt; 
 #&gt; $experiments[[1]]$experiment_steps
 #&gt; $experiments[[1]]$experiment_steps[[1]]
 #&gt; $experiments[[1]]$experiment_steps[[1]]$id
-#&gt; [1] 50838
+#&gt; [1] 62425
 #&gt; 
 #&gt; $experiments[[1]]$experiment_steps[[1]]$ended_at
 #&gt; NULL
 #&gt; 
 #&gt; $experiments[[1]]$experiment_steps[[1]]$thread
-#&gt; $experiments[[1]]$experiment_steps[[1]]$thread$comments_count
+#&gt; $experiments[[1]]$experiment_steps[[1]]$thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $experiments[[1]]$experiment_steps[[1]]$thread$comment_count
 #&gt; [1] 0
 #&gt; 
 #&gt; $experiments[[1]]$experiment_steps[[1]]$thread$id
-#&gt; [1] 477406
+#&gt; [1] 506761
 #&gt; 
 #&gt; 
 #&gt; 
@@ -265,6 +271,9 @@
 #&gt; 
 #&gt; $signatures
 #&gt; list()
+#&gt; 
+#&gt; $share_link
+#&gt; NULL
 #&gt; 
 #&gt; $permissions
 #&gt; $permissions$view

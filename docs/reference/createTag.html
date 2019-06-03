@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">labstepR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2</span>
       </span>
     </div>
 
@@ -129,7 +129,14 @@
     <pre class="examples"><div class='input'><span class='no'>user</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='login.html'>login</a></span>(<span class='st'>"demo@labstep.com"</span>,<span class='st'>"demopassword"</span>)
 <span class='no'>tag</span> <span class='kw'>&lt;-</span> <span class='fu'>createTag</span>(<span class='no'>user</span>,<span class='st'>'MyTag'</span>)
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>tag</span>)</div><div class='output co'>#&gt; $message
-#&gt; [1] "An exception occurred while executing 'INSERT INTO tag (created_at, updated_at, name, author_id) VALUES (?, ?, ?, ?)' with params [\"2019-04-02 16:27:25\", \"2019-04-02 16:27:25\", \"MyTag\", 4524]:\n\nSQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'MyTag-4524' for key 'tag_name_author_id'"
+#&gt; $message[[1]]
+#&gt; $message[[1]]$property
+#&gt; [1] "author"
+#&gt; 
+#&gt; $message[[1]]$message
+#&gt; [1] "This author has already created a Tag with this name."
+#&gt; 
+#&gt; 
 #&gt; </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
