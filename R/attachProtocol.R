@@ -20,7 +20,7 @@
 attachProtocol <- function(user,experiment,protocol){
 
   req <- httr::POST('https://api.labstep.com/api/generic/experiment',
-              body=list(experiment_workflow_id=experiment$id,protocol_id=protocol$id),
+              body=list(experiment_workflow_id=experiment$id,protocol_id=protocol$last_version$id),
               add_headers(apikey=user$api_key),
               encode='json')
 

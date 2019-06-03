@@ -14,7 +14,7 @@
 
 createProtocol <- function(user,name){
 
-  req <- httr::POST('https://api.labstep.com/api/generic/protocol',
+  req <- httr::POST('https://api.labstep.com/api/generic/protocol-collection',
               body=list(name=name),
               add_headers(apikey=user$api_key),
               encode='json')
