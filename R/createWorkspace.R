@@ -1,18 +1,18 @@
-#' Create a Project on Labstep
+#' Create a Workspace on Labstep
 #'
-#' This function allows you to create a Labstep Project.
-#' @name createProject
+#' This function allows you to create a Labstep Workspace.
+#' @name createWorkspace
 #' @param user A labstep user object. Must contain an `api_key` field. Returned from `login` command
-#' @param name The name you want to give your Project.
-#' @return Returns an `project` object
+#' @param name The name you want to give your Workspace.
+#' @return Returns an `workspace` object
 #' @import httr
 #' @export
 #' @examples
 #' user <- login("demo@labstep.com","demopassword")
-#' project <- createProject(user,'My First Project')
-#' print(project)
+#' workspace <- createWorkspace(user,'My First Workspace')
+#' print(workspace)
 
-createProject <- function(user,name){
+createWorkspace <- function(user,name){
 
   req <- httr::POST('https://api.labstep.com/api/generic/group',
               body=list(name=name),

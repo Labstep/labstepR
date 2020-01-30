@@ -7,7 +7,7 @@ print(experiment)
 comment <- addComment(user,experiment,'Test Comment')
 print(comment)
 script = rstudioapi::getSourceEditorContext()$path
-file <- attachFile(user,experiment,script,'does this caption work?')
+file <- attachFile(user,experiment,script,'Script used in this experiment')
 print(file)
 resource <- createResource(user,'R Package Test Resource')
 print(resource)

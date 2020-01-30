@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Retrieve metadata for a particular Labstep Project — getProject • labstepR</title>
+<title>Retrieve metadata for a particular Labstep Workspace — getWorkspace • labstepR</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Retrieve metadata for a particular Labstep Project — getProject" />
+<meta property="og:title" content="Retrieve metadata for a particular Labstep Workspace — getWorkspace" />
 
-<meta property="og:description" content="This function allows you to retrieve metadata for a single project" />
+<meta property="og:description" content="This function allows you to retrieve metadata for a single workspace" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -94,18 +94,18 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Retrieve metadata for a particular Labstep Project</h1>
+    <h1>Retrieve metadata for a particular Labstep Workspace</h1>
     
-    <div class="hidden name"><code>getProject.Rd</code></div>
+    <div class="hidden name"><code>getWorkspace.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>This function allows you to retrieve metadata for a single project</p>
+    <p>This function allows you to retrieve metadata for a single workspace</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>getProject</span>(<span class='no'>user</span>, <span class='no'>id</span>)</pre>
+    <pre class="usage"><span class='fu'>getWorkspace</span>(<span class='no'>user</span>, <span class='no'>id</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -116,23 +116,23 @@
     </tr>
     <tr>
       <th>id</th>
-      <td><p>ID of the project to retrieve</p></td>
+      <td><p>ID of the workspace to retrieve</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>Returns a `project` object</p>
+    <p>Returns a `workspace` object</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>user</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='login.html'>login</a></span>(<span class='st'>"demo@labstep.com"</span>,<span class='st'>"demopassword"</span>)
-<span class='no'>project</span> <span class='kw'>&lt;-</span> <span class='fu'>getProject</span>(<span class='no'>user</span>,<span class='fl'>1186</span>)
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>project</span>)</div><div class='output co'>#&gt; $id
+<span class='no'>workspace</span> <span class='kw'>&lt;-</span> <span class='fu'>getWorkspace</span>(<span class='no'>user</span>,<span class='fl'>1186</span>)
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>workspace</span>)</div><div class='output co'>#&gt; $id
 #&gt; [1] 1186
 #&gt; 
 #&gt; $name
-#&gt; [1] "My First Project"
+#&gt; [1] "My First Workspace"
 #&gt; 
 #&gt; $protocol_collection_count
 #&gt; [1] 80
