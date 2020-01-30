@@ -128,31 +128,41 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>user</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='login.html'>login</a></span>(<span class='st'>"demo@labstep.com"</span>,<span class='st'>"demopassword"</span>)
 <span class='no'>resource</span> <span class='kw'>&lt;-</span> <span class='fu'>createResource</span>(<span class='no'>user</span>,<span class='st'>'My First Resource'</span>)
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>resource</span>)</div><div class='output co'>#&gt; $id
-#&gt; [1] 392824
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>resource</span>)</div><div class='output co'>#&gt; $status
+#&gt; [1] "unavailable"
+#&gt; 
+#&gt; $resource_item_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $available_resource_item_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $id
+#&gt; [1] 428785
 #&gt; 
 #&gt; $created_at
-#&gt; [1] "2019-06-03T14:43:25+00:00"
+#&gt; [1] "2020-01-30T16:35:13+00:00"
 #&gt; 
 #&gt; $updated_at
-#&gt; [1] "2019-06-03T14:43:25+00:00"
+#&gt; [1] "2020-01-30T16:35:13+00:00"
 #&gt; 
 #&gt; $deleted_at
 #&gt; NULL
 #&gt; 
-#&gt; $status
-#&gt; [1] "available"
-#&gt; 
 #&gt; $name
 #&gt; [1] "My First Resource"
 #&gt; 
+#&gt; $default_quantity_amount
+#&gt; NULL
+#&gt; 
+#&gt; $default_quantity_unit
+#&gt; NULL
+#&gt; 
 #&gt; $identifier
-#&gt; [1] "549598e3-1c1e-4b2a-94cf-2e159ca4f34b"
+#&gt; [1] "8b0123fa-9307-49bb-86ff-7ed1ca13f20c"
 #&gt; 
 #&gt; $metadata
-#&gt; $metadata$name
-#&gt; [1] "My First Resource"
-#&gt; 
+#&gt; NULL
 #&gt; 
 #&gt; $author
 #&gt; $author$id
@@ -172,193 +182,115 @@
 #&gt; [1] "ROLE_GROUP_1182"
 #&gt; 
 #&gt; $author$roles[[4]]
-#&gt; [1] "ROLE_GROUP_OWNER_1182"
-#&gt; 
-#&gt; $author$roles[[5]]
 #&gt; [1] "ROLE_GROUP_1183"
 #&gt; 
-#&gt; $author$roles[[6]]
-#&gt; [1] "ROLE_GROUP_OWNER_1183"
-#&gt; 
-#&gt; $author$roles[[7]]
+#&gt; $author$roles[[5]]
 #&gt; [1] "ROLE_GROUP_1184"
 #&gt; 
-#&gt; $author$roles[[8]]
-#&gt; [1] "ROLE_GROUP_OWNER_1184"
-#&gt; 
-#&gt; $author$roles[[9]]
+#&gt; $author$roles[[6]]
 #&gt; [1] "ROLE_GROUP_1185"
 #&gt; 
-#&gt; $author$roles[[10]]
-#&gt; [1] "ROLE_GROUP_OWNER_1185"
-#&gt; 
-#&gt; $author$roles[[11]]
+#&gt; $author$roles[[7]]
 #&gt; [1] "ROLE_GROUP_1186"
 #&gt; 
-#&gt; $author$roles[[12]]
-#&gt; [1] "ROLE_GROUP_OWNER_1186"
-#&gt; 
-#&gt; $author$roles[[13]]
+#&gt; $author$roles[[8]]
 #&gt; [1] "ROLE_GROUP_1187"
 #&gt; 
-#&gt; $author$roles[[14]]
-#&gt; [1] "ROLE_GROUP_OWNER_1187"
-#&gt; 
-#&gt; $author$roles[[15]]
+#&gt; $author$roles[[9]]
 #&gt; [1] "ROLE_GROUP_1188"
 #&gt; 
-#&gt; $author$roles[[16]]
-#&gt; [1] "ROLE_GROUP_OWNER_1188"
-#&gt; 
-#&gt; $author$roles[[17]]
+#&gt; $author$roles[[10]]
 #&gt; [1] "ROLE_GROUP_1189"
 #&gt; 
-#&gt; $author$roles[[18]]
-#&gt; [1] "ROLE_GROUP_OWNER_1189"
-#&gt; 
-#&gt; $author$roles[[19]]
+#&gt; $author$roles[[11]]
 #&gt; [1] "ROLE_GROUP_1190"
 #&gt; 
-#&gt; $author$roles[[20]]
-#&gt; [1] "ROLE_GROUP_OWNER_1190"
-#&gt; 
-#&gt; $author$roles[[21]]
+#&gt; $author$roles[[12]]
 #&gt; [1] "ROLE_GROUP_1191"
 #&gt; 
-#&gt; $author$roles[[22]]
-#&gt; [1] "ROLE_GROUP_OWNER_1191"
-#&gt; 
-#&gt; $author$roles[[23]]
+#&gt; $author$roles[[13]]
 #&gt; [1] "ROLE_GROUP_1192"
 #&gt; 
-#&gt; $author$roles[[24]]
-#&gt; [1] "ROLE_GROUP_OWNER_1192"
-#&gt; 
-#&gt; $author$roles[[25]]
+#&gt; $author$roles[[14]]
 #&gt; [1] "ROLE_GROUP_1193"
 #&gt; 
-#&gt; $author$roles[[26]]
-#&gt; [1] "ROLE_GROUP_OWNER_1193"
-#&gt; 
-#&gt; $author$roles[[27]]
+#&gt; $author$roles[[15]]
 #&gt; [1] "ROLE_GROUP_1198"
 #&gt; 
-#&gt; $author$roles[[28]]
-#&gt; [1] "ROLE_GROUP_OWNER_1198"
-#&gt; 
-#&gt; $author$roles[[29]]
+#&gt; $author$roles[[16]]
 #&gt; [1] "ROLE_GROUP_1200"
 #&gt; 
-#&gt; $author$roles[[30]]
-#&gt; [1] "ROLE_GROUP_OWNER_1200"
-#&gt; 
-#&gt; $author$roles[[31]]
+#&gt; $author$roles[[17]]
 #&gt; [1] "ROLE_GROUP_1201"
 #&gt; 
-#&gt; $author$roles[[32]]
-#&gt; [1] "ROLE_GROUP_OWNER_1201"
-#&gt; 
-#&gt; $author$roles[[33]]
+#&gt; $author$roles[[18]]
 #&gt; [1] "ROLE_GROUP_1202"
 #&gt; 
-#&gt; $author$roles[[34]]
-#&gt; [1] "ROLE_GROUP_OWNER_1202"
-#&gt; 
-#&gt; $author$roles[[35]]
+#&gt; $author$roles[[19]]
 #&gt; [1] "ROLE_GROUP_1203"
 #&gt; 
-#&gt; $author$roles[[36]]
-#&gt; [1] "ROLE_GROUP_OWNER_1203"
-#&gt; 
-#&gt; $author$roles[[37]]
+#&gt; $author$roles[[20]]
 #&gt; [1] "ROLE_GROUP_1204"
 #&gt; 
-#&gt; $author$roles[[38]]
-#&gt; [1] "ROLE_GROUP_OWNER_1204"
-#&gt; 
-#&gt; $author$roles[[39]]
+#&gt; $author$roles[[21]]
 #&gt; [1] "ROLE_GROUP_1205"
 #&gt; 
-#&gt; $author$roles[[40]]
-#&gt; [1] "ROLE_GROUP_OWNER_1205"
-#&gt; 
-#&gt; $author$roles[[41]]
+#&gt; $author$roles[[22]]
 #&gt; [1] "ROLE_GROUP_1206"
 #&gt; 
-#&gt; $author$roles[[42]]
-#&gt; [1] "ROLE_GROUP_OWNER_1206"
-#&gt; 
-#&gt; $author$roles[[43]]
+#&gt; $author$roles[[23]]
 #&gt; [1] "ROLE_GROUP_1207"
 #&gt; 
-#&gt; $author$roles[[44]]
-#&gt; [1] "ROLE_GROUP_OWNER_1207"
-#&gt; 
-#&gt; $author$roles[[45]]
+#&gt; $author$roles[[24]]
 #&gt; [1] "ROLE_GROUP_1208"
 #&gt; 
-#&gt; $author$roles[[46]]
-#&gt; [1] "ROLE_GROUP_OWNER_1208"
-#&gt; 
-#&gt; $author$roles[[47]]
+#&gt; $author$roles[[25]]
 #&gt; [1] "ROLE_GROUP_1213"
 #&gt; 
-#&gt; $author$roles[[48]]
-#&gt; [1] "ROLE_GROUP_OWNER_1213"
-#&gt; 
-#&gt; $author$roles[[49]]
+#&gt; $author$roles[[26]]
 #&gt; [1] "ROLE_GROUP_1214"
 #&gt; 
-#&gt; $author$roles[[50]]
-#&gt; [1] "ROLE_GROUP_OWNER_1214"
-#&gt; 
-#&gt; $author$roles[[51]]
+#&gt; $author$roles[[27]]
 #&gt; [1] "ROLE_GROUP_1220"
 #&gt; 
-#&gt; $author$roles[[52]]
-#&gt; [1] "ROLE_GROUP_OWNER_1220"
-#&gt; 
-#&gt; $author$roles[[53]]
+#&gt; $author$roles[[28]]
 #&gt; [1] "ROLE_GROUP_1221"
 #&gt; 
-#&gt; $author$roles[[54]]
-#&gt; [1] "ROLE_GROUP_OWNER_1221"
-#&gt; 
-#&gt; $author$roles[[55]]
+#&gt; $author$roles[[29]]
 #&gt; [1] "ROLE_GROUP_1222"
 #&gt; 
-#&gt; $author$roles[[56]]
-#&gt; [1] "ROLE_GROUP_OWNER_1222"
-#&gt; 
-#&gt; $author$roles[[57]]
+#&gt; $author$roles[[30]]
 #&gt; [1] "ROLE_GROUP_1774"
 #&gt; 
-#&gt; $author$roles[[58]]
-#&gt; [1] "ROLE_GROUP_OWNER_1774"
-#&gt; 
-#&gt; $author$roles[[59]]
+#&gt; $author$roles[[31]]
 #&gt; [1] "ROLE_GROUP_1775"
 #&gt; 
-#&gt; $author$roles[[60]]
-#&gt; [1] "ROLE_GROUP_OWNER_1775"
-#&gt; 
-#&gt; $author$roles[[61]]
+#&gt; $author$roles[[32]]
 #&gt; [1] "ROLE_GROUP_1776"
 #&gt; 
-#&gt; $author$roles[[62]]
-#&gt; [1] "ROLE_GROUP_OWNER_1776"
-#&gt; 
-#&gt; $author$roles[[63]]
+#&gt; $author$roles[[33]]
 #&gt; [1] "ROLE_GROUP_1780"
 #&gt; 
-#&gt; $author$roles[[64]]
-#&gt; [1] "ROLE_GROUP_OWNER_1780"
-#&gt; 
-#&gt; $author$roles[[65]]
+#&gt; $author$roles[[34]]
 #&gt; [1] "ROLE_GROUP_1781"
 #&gt; 
-#&gt; $author$roles[[66]]
-#&gt; [1] "ROLE_GROUP_OWNER_1781"
+#&gt; $author$roles[[35]]
+#&gt; [1] "ROLE_GROUP_2243"
+#&gt; 
+#&gt; $author$roles[[36]]
+#&gt; [1] "ROLE_GROUP_2244"
+#&gt; 
+#&gt; $author$roles[[37]]
+#&gt; [1] "ROLE_GROUP_6867"
+#&gt; 
+#&gt; $author$roles[[38]]
+#&gt; [1] "ROLE_GROUP_10199"
+#&gt; 
+#&gt; $author$roles[[39]]
+#&gt; [1] "ROLE_GROUP_10673"
+#&gt; 
+#&gt; $author$roles[[40]]
+#&gt; [1] "ROLE_GROUP_10675"
 #&gt; 
 #&gt; 
 #&gt; $author$name
@@ -379,6 +311,9 @@
 #&gt; 
 #&gt; 
 #&gt; 
+#&gt; $resource_category
+#&gt; NULL
+#&gt; 
 #&gt; $thread
 #&gt; $thread$all_comment_count
 #&gt; [1] 0
@@ -387,7 +322,7 @@
 #&gt; [1] 0
 #&gt; 
 #&gt; $thread$id
-#&gt; [1] 506764
+#&gt; [1] 673381
 #&gt; 
 #&gt; 
 #&gt; $review_thread
@@ -395,10 +330,18 @@
 #&gt; [1] 0
 #&gt; 
 #&gt; $review_thread$id
-#&gt; [1] 392398
+#&gt; [1] 407239
 #&gt; 
 #&gt; $review_thread$average_rating
 #&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; $metadata_thread
+#&gt; $metadata_thread$id
+#&gt; [1] 473794
+#&gt; 
+#&gt; $metadata_thread$metadatas
+#&gt; list()
 #&gt; 
 #&gt; 
 #&gt; $image
@@ -407,14 +350,14 @@
 #&gt; $parent
 #&gt; NULL
 #&gt; 
-#&gt; $resource_category
-#&gt; NULL
-#&gt; 
 #&gt; $resource_location
 #&gt; NULL
 #&gt; 
-#&gt; $logged_user_resource_list_count
-#&gt; [1] 1
+#&gt; $logged_user_count
+#&gt; NULL
+#&gt; 
+#&gt; $logged_user_parent_count
+#&gt; NULL
 #&gt; 
 #&gt; $logged_user_resource_wishlist_count
 #&gt; [1] 0
@@ -435,6 +378,42 @@
 #&gt; 
 #&gt; $share_link
 #&gt; NULL
+#&gt; 
+#&gt; $perma_link
+#&gt; $perma_link$id
+#&gt; [1] 480264
+#&gt; 
+#&gt; $perma_link$token
+#&gt; [1] "96d16d85-2beb-4f3d-8090-9111a4a1bad6"
+#&gt; 
+#&gt; 
+#&gt; $owner
+#&gt; $owner$id
+#&gt; [1] 6867
+#&gt; 
+#&gt; $owner$name
+#&gt; [1] "Demo Labstep workspace"
+#&gt; 
+#&gt; $owner$created_at
+#&gt; [1] "2019-08-06T20:34:00+00:00"
+#&gt; 
+#&gt; $owner$deleted_at
+#&gt; NULL
+#&gt; 
+#&gt; $owner$description
+#&gt; NULL
+#&gt; 
+#&gt; $owner$profile
+#&gt; $owner$profile$id
+#&gt; [1] 19084
+#&gt; 
+#&gt; $owner$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; $owner$is_home
+#&gt; [1] TRUE
+#&gt; 
 #&gt; </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">

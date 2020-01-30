@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Attaches a file to a thread on Labstep — attachFile • labstepR</title>
+<title>Create a Workspace on Labstep — createWorkspace • labstepR</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Attaches a file to a thread on Labstep — attachFile" />
+<meta property="og:title" content="Create a Workspace on Labstep — createWorkspace" />
 
-<meta property="og:description" content="This function allows you to attach a file to different content types" />
+<meta property="og:description" content="This function allows you to create a Labstep Workspace." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -94,18 +94,18 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Attaches a file to a thread on Labstep</h1>
+    <h1>Create a Workspace on Labstep</h1>
     
-    <div class="hidden name"><code>attachFile.Rd</code></div>
+    <div class="hidden name"><code>createWorkspace.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>This function allows you to attach a file to different content types</p>
+    <p>This function allows you to create a Labstep Workspace.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>attachFile</span>(<span class='no'>user</span>, <span class='no'>object</span>, <span class='no'>filepath</span>, <span class='no'>caption</span>)</pre>
+    <pre class="usage"><span class='fu'>createWorkspace</span>(<span class='no'>user</span>, <span class='no'>name</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -115,50 +115,66 @@
       <td><p>A labstep user object. Must contain an `api_key` field. Returned from `login` command</p></td>
     </tr>
     <tr>
-      <th>object</th>
-      <td><p>The labstep object you want to comment on. Can be `protocol`, `experiment` or `resource`</p></td>
-    </tr>
-    <tr>
-      <th>filepath</th>
-      <td><p>The path to ther file to attach.</p></td>
-    </tr>
-    <tr>
-      <th>caption</th>
-      <td><p>A caption describing your file (optional)</p></td>
+      <th>name</th>
+      <td><p>The name you want to give your Workspace.</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>Returns a `comment` object with the file attached</p>
+    <p>Returns an `workspace` object</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>user</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='login.html'>login</a></span>(<span class='st'>"demo@labstep.com"</span>,<span class='st'>"demopassword"</span>)
-<span class='no'>expName</span> <span class='kw'>=</span> <span class='st'>'My First Experiment'</span>
-<span class='no'>expDesc</span> <span class='kw'>=</span> <span class='st'>'An experiment testing the labstepR library'</span>
-<span class='no'>experiment</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='createExperiment.html'>createExperiment</a></span>(<span class='no'>user</span>,<span class='no'>expName</span>,<span class='no'>expDesc</span>)
-<span class='no'>filepath</span> <span class='kw'>=</span> <span class='st'>'mydata.RData'</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/save'>save.image</a></span>(<span class='no'>filepath</span>)
-<span class='no'>caption</span> <span class='kw'>=</span> <span class='st'>'The R workspace after running this script'</span>
-<span class='no'>file</span> <span class='kw'>&lt;-</span> <span class='fu'>attachFile</span>(<span class='no'>user</span>,<span class='no'>experiment</span>,<span class='no'>filepath</span>,<span class='no'>caption</span>)
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>file</span>)</div><div class='output co'>#&gt; $locked_at
+<span class='no'>workspace</span> <span class='kw'>&lt;-</span> <span class='fu'>createWorkspace</span>(<span class='no'>user</span>,<span class='st'>'My First Workspace'</span>)
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='no'>workspace</span>)</div><div class='output co'>#&gt; $id
+#&gt; [1] 13993
+#&gt; 
+#&gt; $name
+#&gt; [1] "My First Workspace"
+#&gt; 
+#&gt; $owners
+#&gt; $owners[[1]]
+#&gt; $owners[[1]]$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; $owners[[1]]$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; $owners[[1]]$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; $owners[[1]]$first_name
+#&gt; [1] "Demo"
+#&gt; 
+#&gt; $owners[[1]]$profile
+#&gt; $owners[[1]]$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; $owners[[1]]$profile$about
 #&gt; NULL
 #&gt; 
-#&gt; $id
-#&gt; [1] 54762
+#&gt; $owners[[1]]$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $invitations
+#&gt; list()
 #&gt; 
 #&gt; $created_at
-#&gt; [1] "2020-01-30T16:35:06+00:00"
-#&gt; 
-#&gt; $updated_at
-#&gt; [1] "2020-01-30T16:35:06+00:00"
+#&gt; [1] "2020-01-30T16:35:14+00:00"
 #&gt; 
 #&gt; $deleted_at
 #&gt; NULL
 #&gt; 
-#&gt; $body
-#&gt; [1] "The R workspace after running this script"
+#&gt; $member_permission
+#&gt; [1] "edit"
+#&gt; 
+#&gt; $description
+#&gt; NULL
 #&gt; 
 #&gt; $author
 #&gt; $author$id
@@ -173,131 +189,38 @@
 #&gt; $author$first_name
 #&gt; [1] "Demo"
 #&gt; 
-#&gt; $author$last_name
-#&gt; [1] "Labstep"
-#&gt; 
 #&gt; $author$profile
 #&gt; $author$profile$id
 #&gt; [1] 5751
+#&gt; 
+#&gt; $author$profile$about
+#&gt; NULL
 #&gt; 
 #&gt; $author$profile$photo
 #&gt; NULL
 #&gt; 
 #&gt; 
 #&gt; 
-#&gt; $thread
-#&gt; $thread$all_comment_count
-#&gt; [1] 1
+#&gt; $profile
+#&gt; $profile$id
+#&gt; [1] 24799
 #&gt; 
-#&gt; $thread$comment_count
-#&gt; [1] 1
-#&gt; 
-#&gt; $thread$id
-#&gt; [1] 673375
-#&gt; 
-#&gt; 
-#&gt; $resource
+#&gt; $profile$about
 #&gt; NULL
 #&gt; 
-#&gt; $comment_molecule
-#&gt; NULL
-#&gt; 
-#&gt; $comment_post
-#&gt; NULL
-#&gt; 
-#&gt; $comment_table
-#&gt; NULL
-#&gt; 
-#&gt; $files
-#&gt; $files[[1]]
-#&gt; $files[[1]]$filetype
-#&gt; [1] "rdata"
-#&gt; 
-#&gt; $files[[1]]$parent_type
-#&gt; [1] "comment"
-#&gt; 
-#&gt; $files[[1]]$id
-#&gt; [1] 106915
-#&gt; 
-#&gt; $files[[1]]$created_at
-#&gt; [1] "2020-01-30T16:35:06+00:00"
-#&gt; 
-#&gt; $files[[1]]$deleted_at
-#&gt; NULL
-#&gt; 
-#&gt; $files[[1]]$is_external
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $files[[1]]$is_link
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $files[[1]]$is_snapgene
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $files[[1]]$is_snapgene_processing
-#&gt; [1] FALSE
-#&gt; 
-#&gt; $files[[1]]$name
-#&gt; [1] "mydata.RData"
-#&gt; 
-#&gt; $files[[1]]$path
-#&gt; [1] "2020/01/30/phpsxli2N.RData"
-#&gt; 
-#&gt; $files[[1]]$link_source
-#&gt; NULL
-#&gt; 
-#&gt; $files[[1]]$size
-#&gt; [1] 2586
-#&gt; 
-#&gt; $files[[1]]$mime_type
-#&gt; [1] "application/x-gzip"
-#&gt; 
-#&gt; $files[[1]]$snapgene_output_png
-#&gt; NULL
-#&gt; 
-#&gt; $files[[1]]$snapgene_output_svg
-#&gt; NULL
-#&gt; 
-#&gt; $files[[1]]$owner
-#&gt; $files[[1]]$owner$id
-#&gt; [1] 6867
-#&gt; 
-#&gt; $files[[1]]$owner$name
-#&gt; [1] "Demo Labstep workspace"
-#&gt; 
-#&gt; $files[[1]]$owner$created_at
-#&gt; [1] "2019-08-06T20:34:00+00:00"
-#&gt; 
-#&gt; $files[[1]]$owner$deleted_at
-#&gt; NULL
-#&gt; 
-#&gt; $files[[1]]$owner$description
-#&gt; NULL
-#&gt; 
-#&gt; $files[[1]]$owner$profile
-#&gt; $files[[1]]$owner$profile$id
-#&gt; [1] 19084
-#&gt; 
-#&gt; $files[[1]]$owner$profile$photo
+#&gt; $profile$photo
 #&gt; NULL
 #&gt; 
 #&gt; 
-#&gt; $files[[1]]$owner$is_home
-#&gt; [1] TRUE
-#&gt; 
-#&gt; 
-#&gt; $files[[1]]$permissions
-#&gt; $files[[1]]$permissions$view
-#&gt; [1] TRUE
-#&gt; 
-#&gt; $files[[1]]$permissions$edit
-#&gt; [1] TRUE
-#&gt; 
-#&gt; $files[[1]]$permissions$owner
-#&gt; [1] TRUE
+#&gt; $resource_wishlists
+#&gt; $resource_wishlists[[1]]
+#&gt; $resource_wishlists[[1]]$id
+#&gt; [1] 14599
 #&gt; 
 #&gt; 
 #&gt; 
+#&gt; $share_link
+#&gt; NULL
 #&gt; 
 #&gt; $permissions
 #&gt; $permissions$view
@@ -308,6 +231,115 @@
 #&gt; 
 #&gt; $permissions$owner
 #&gt; [1] TRUE
+#&gt; 
+#&gt; 
+#&gt; $thread
+#&gt; $thread$all_comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $thread$comment_count
+#&gt; [1] 0
+#&gt; 
+#&gt; $thread$id
+#&gt; [1] 673382
+#&gt; 
+#&gt; 
+#&gt; $security_policy
+#&gt; NULL
+#&gt; 
+#&gt; $user_groups
+#&gt; $user_groups[[1]]
+#&gt; $user_groups[[1]]$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; $user_groups[[1]]$deleted_at
+#&gt; NULL
+#&gt; 
+#&gt; $user_groups[[1]]$id
+#&gt; [1] 16483
+#&gt; 
+#&gt; $user_groups[[1]]$type
+#&gt; [1] "owner"
+#&gt; 
+#&gt; $user_groups[[1]]$security_policy
+#&gt; NULL
+#&gt; 
+#&gt; $user_groups[[1]]$user
+#&gt; $user_groups[[1]]$user$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; $user_groups[[1]]$user$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; $user_groups[[1]]$user$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; $user_groups[[1]]$user$first_name
+#&gt; [1] "Demo"
+#&gt; 
+#&gt; $user_groups[[1]]$user$profile
+#&gt; $user_groups[[1]]$user$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; $user_groups[[1]]$user$profile$about
+#&gt; NULL
+#&gt; 
+#&gt; $user_groups[[1]]$user$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $user_groups[[1]]$is_home
+#&gt; [1] FALSE
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $is_home
+#&gt; [1] FALSE
+#&gt; 
+#&gt; $logged_user_user_group
+#&gt; $logged_user_user_group$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; $logged_user_user_group$deleted_at
+#&gt; NULL
+#&gt; 
+#&gt; $logged_user_user_group$id
+#&gt; [1] 16483
+#&gt; 
+#&gt; $logged_user_user_group$type
+#&gt; [1] "owner"
+#&gt; 
+#&gt; $logged_user_user_group$security_policy
+#&gt; NULL
+#&gt; 
+#&gt; $logged_user_user_group$user
+#&gt; $logged_user_user_group$user$id
+#&gt; [1] 4524
+#&gt; 
+#&gt; $logged_user_user_group$user$username
+#&gt; [1] "demo@labstep.com"
+#&gt; 
+#&gt; $logged_user_user_group$user$name
+#&gt; [1] "Demo Labstep"
+#&gt; 
+#&gt; $logged_user_user_group$user$first_name
+#&gt; [1] "Demo"
+#&gt; 
+#&gt; $logged_user_user_group$user$profile
+#&gt; $logged_user_user_group$user$profile$id
+#&gt; [1] 5751
+#&gt; 
+#&gt; $logged_user_user_group$user$profile$about
+#&gt; NULL
+#&gt; 
+#&gt; $logged_user_user_group$user$profile$photo
+#&gt; NULL
+#&gt; 
+#&gt; 
+#&gt; 
+#&gt; $logged_user_user_group$is_home
+#&gt; [1] FALSE
 #&gt; 
 #&gt; </div></pre>
   </div>
